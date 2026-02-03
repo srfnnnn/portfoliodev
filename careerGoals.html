@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Career goals</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+
+    <body style="background-color: #f8eed9;">
+
+        <style>
+        .navbar.scrolled {
+            background-color: rgba(75, 13, 27, 0.85) !important; /* translucent */
+            padding: 1px 8px; /* thinner */
+            backdrop-filter: blur(5px); /* adds subtle blur */
+        }
+        .navbar-brand {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .navbar-brand span {
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+
+        .navbar.scrolled .navbar-brand span {
+            font-size: 15px;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left: 50px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 50px; width: 50px;">
+                    <span class="ms-1 fw-bold" style="color:#F2F1ED; letter-spacing: 0.05em;">I`Syntax</span>
+                </a>
+    
+                <!-- Centered nav items -->
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right: 80px;">
+                    <ul class="navbar-nav gap-5">
+        
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="index.html" style="color: #F2F1ED;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                        </li>
+
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <!-- Projects link -->
+                            <a class="nav-link fs-4" href="projects.html" style="color: #F2F1ED;">Projects</a>
+                             
+                            <!-- Dropdown arrow (split) -->
+                            <a class="nav-link fs-5 dropdown-toggle dropdown-toggle-split p-0" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="vrsection.html">Virtual Reality</a></li>
+                                <li><a class="dropdown-item" href="designs.html">Designs</a></li>
+                                <li><a class="dropdown-item" href="webdev.html">Application Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="contact.html" style="color: #F2F1ED;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+           </script>
+        </nav>
+
+        <!--Header-->
+        <section style="height: auto; color: #3d0812; background-color: #f8eed9; display: flex; justify-content: center; align-items: center; text-align: center; padding: 120px 80px; flex-direction: row; ">
+            <div style="margin-top: 30px;">
+                <h1 style="font-weight: bold; font-family: 'Merriweather', Georgia, serif;">
+                    Diploma in Digital Design and Development
+                </h1>
+
+                <div style="border-bottom: 3px dashed #3d0812; width: 80%; margin-left: 115px; margin-top: 20px;"></div>
+
+                <br>
+                <p style="font-family: 'Poppins', sans-serif; margin-top: 30px; font-size: 16px;">I am a second-year Polytechnic student studying Web Design and Development, with a strong interest in creating functional, 
+                    user-friendly web applications that balance both design and development. Through my studies and projects, I have developed an appreciation for how thoughtful design and clean code work together to 
+                    create effective digital experiences.</p>
+            </div>
+
+        </section>
+
+
+        <!--ShortTermGoals-->
+        <section style="background-color: #4b0d1b; color: #f8eed9; padding: 80px 50px; font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; align-items: center; gap: 50px;">
+            <div style="text-align: center; max-width: 800px; display: flex; flex-direction: column; gap: 20px;">
+        
+                <h2 style="font-weight: bold; letter-spacing: 1px; border-top: 2px solid #f8eed9; border-bottom: 2px solid #f8eed9; width: 100%; display: inline-block; margin-bottom: 50px; padding: 15px 0;">
+                    Short-Term Goals
+                </h2>
+        
+                <p style="color: #F2F1ED;">
+                    — To gain practical industry experience through an internship where I can apply
+                    what I have learned in school while continuing to grow my skills
+                </p>
+    
+            </div>
+
+    
+            <!-- Cards Row -->
+    
+            <div style="display: flex; flex-direction: column; gap: 30px; flex-wrap: wrap; justify-content: center;">
+                <div style="display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; justify-content: center; line-height: 25px; font-size: 16px;">
+                    <div style="width: 18rem; background-color: #7d0e2c; color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+            
+                        <div class="card-body">                
+                            <p class="card-text">
+                    
+                                Gain hands-on experience in real-world web development projects
+                
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="width: 18rem; background-color: #7d0e2c; border-radius: 20px; color: #F2F1ED;  padding: 10px 10px; text-align: center;">
+                        <div class="card-body">
+                            <p class="card-text">
+                    
+                                Strengthen my frontend skills using HTML, CSS, JavaScript and React
+                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="width: 18rem; background-color: #7d0e2c;  color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+                        <div class="card-body">
+                            <p class="card-text">
+                    
+                                Improve my understanding of responsive design and accessibility
+                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; justify-content: center;">
+                    <div style="width: 18rem; background-color: #7d0e2c;  color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center; line-height: 25px; font-size: 16px;">
+            
+                        <div class="card-body">
+                            <p class="card-text">
+                    
+                                Learn backend fundamentals such as server-side logic and database integration
+                
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="width: 18rem; background-color: #7d0e2c;  color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+                        <div class="card-body">
+                            <p class="card-text">
+                    
+                                Understand professional workflows, including version control and team collaboration
+                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="width: 18rem; background-color: #7d0e2c;  color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+                        <div class="card-body">
+                            <p class="card-text">
+                    
+                                Develop communication and problem-solving skills in a working environment
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!--LongTermGoals-->
+        <section style="background-color: #f8eed9; color: #330508; padding: 80px 50px; font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; align-items: center; gap: 50px;">
+            <div style="text-align: center; max-width: 800px; display: flex; flex-direction: column; gap: 20px;">
+        
+                <h2 style="font-weight: bold; padding: 15px 100px; letter-spacing: 1px; border-top: 2px solid #470d17; border-bottom: 2px solid #470d17; display: inline-block; margin-bottom: 50px; padding: 15px 0;">
+                    Long-Term Goals
+                </h2>
+        
+                <p>
+                    — I aspire to become a well-rounded web developer who can design and develop meaningful digital products. 
+                     I am particularly interested in creating user-centered web
+                     experiences and continuously improving my technical and design skills as technology evolves.
+                </p>
+    
+            </div>
+
+        </section>
+
+
+        <!--doingTowards-->
+        <section style="background-color: #4b0d1b; color: #f8eed9; padding: 80px 50px; font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; align-items: center; gap: 50px;">
+            <div style="text-align: center; max-width: 800px; display: flex; flex-direction: column; gap: 20px; ">
+        
+                <h2 style="font-weight: bold; letter-spacing: 1px; border-top: 2px solid #f8eed9; border-bottom: 2px solid #f8eed9; width: 100%; display: inline-block; margin-bottom: 50px; padding: 15px 0;">
+                    Towards goals
+                </h2>
+        
+                <p style="color: #F2F1ED;">
+                    — I am actively building my skills and preparing for a career in web development.
+                </p>
+    
+            </div>
+
+    
+            <!-- Cards Row -->
+    
+            <div style="display: flex; flex-direction: column; gap: 30px; flex-wrap: wrap; justify-content: center;">
+                <div style="display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; justify-content: center; line-height: 25px; font-size: 16px;">
+                    <div style="width: 18rem; background-color: #7d0e2c; color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+            
+                        <div class="card-body">                
+                            <p class="card-text">
+                    
+                                Completing school projects that involve both UI design and web development
+                
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="width: 18rem; background-color: #7d0e2c; color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+                        <div class="card-body">
+                            <p class="card-text">
+                    
+                                Building personal projects to practice frontend and backend integration
+                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="width: 18rem; background-color: #7d0e2c; color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+                        <div class="card-body">
+                            <p class="card-text">
+                    
+                                Using Figma to plan layouts and user flows before development
+                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: row; gap: 30px; flex-wrap: wrap; justify-content: center; line-height: 25px; font-size: 16px;">
+                    <div style="width: 18rem; background-color: #7d0e2c; color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+            
+                        <div class="card-body">
+                            <p class="card-text">
+                    
+                                Applying responsive and usability principles in my designs
+                
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="width: 18rem; background-color: #7d0e2c; color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+                        <div class="card-body">
+                            <!-- <h5 class="card-title">Skill Improvement</h5> -->
+                            <p class="card-text">
+                    
+                                Practising Git and GitHub for version control and project management
+                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="width: 18rem; background-color: #7d0e2c; color: #F2F1ED; border-radius: 20px; padding: 10px 10px; text-align: center;">
+                        <div class="card-body">
+                            <!-- <h5 class="card-title">Skill Improvement</h5> -->
+                            <p class="card-text">
+                    
+                                Maintaining this portfolio to document my learning progress and showcase my work
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--ClosingStatement-->
+        <section style="background-color: #f8eed9; color: #330508; padding: 40px 10px; font-family: 'Poppins', sans-serif; display: flex; flex-direction: column; align-items: center; gap: 50px;">
+            <div style="text-align: center; width: 80%; display: flex; flex-direction: column; gap: 20px; font-size: 18px;">
+        
+                <p>
+                    — As a student, I am continuously learning and improving my skills. I am motivated, adaptable and open to feedback. 
+                    This portfolio reflects my learning journey so far 
+                    and I look forward to gaining valuable experience and further developing my career in Web Design and Development —
+                </p>
+    
+            </div>
+
+        </section>
+
+        <!--4th section-->
+        <footer style="background-color: #1D060A; color: white; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+            
+            <div style="max-width: 1200px; margin: auto;">
+                <div style="display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-bottom: 50px;">
+                
+                <div style="margin-top: 40px; margin-left: 50px;">
+    
+                    <div style="display: flex; gap: 20px;">
+                        <a href="https://www.pinterest.com/irfahsorfina/"><img src="photos/PINTEREST_ICON.png" alt="Pinterest" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.instagram.com/cozyknots.hm/"><img src="photos/IG_ICON.png" alt="Instagram" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.linkedin.com/in/irfah-sorfina"><img src="photos/LinkedIn logo.png" alt="LinkedIn" style="width: 65px; height: auto;"></a>
+                    </div>
+                </div>
+    
+                <div style="margin-top: 55px; display: flex; gap: 60px;">
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                  
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 40px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
+                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1; color: #F2F1ED;">
+                        <h2>I`Syntax</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
+        

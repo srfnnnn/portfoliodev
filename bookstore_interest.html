@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>bookstore & interest applications page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+
+    <body style="background-color: #f8eed9;">
+
+        <style>
+        .navbar.scrolled {
+            background-color: rgba(75, 13, 27, 0.85) !important; /* translucent */
+            padding: 1px 8px; /* thinner */
+            backdrop-filter: blur(5px); /* adds subtle blur */
+        }
+        .navbar-brand {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .navbar-brand span {
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+
+        .navbar.scrolled .navbar-brand span {
+            font-size: 15px;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left: 50px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 50px; width: 50px;">
+                    <span class="ms-1 fw-bold" style="color:#F2F1ED; letter-spacing: 0.05em;">I`Syntax</span>
+                </a>
+    
+                <!-- Centered nav items -->
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right: 80px;">
+                    <ul class="navbar-nav gap-5">
+        
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="index.html" style="color: #F2F1ED;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                        </li>
+
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <!-- Projects link -->
+                            <a class="nav-link fs-4" href="projects.html" style="color: #F2F1ED;">Projects</a>
+                             
+                            <!-- Dropdown arrow (split) -->
+                            <a class="nav-link fs-5 dropdown-toggle dropdown-toggle-split p-0" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="vrsection.html">Virtual Reality</a></li>
+                                <li><a class="dropdown-item" href="designs.html">Designs</a></li>
+                                <li><a class="dropdown-item" href="webdev.html">Application Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="contact.html" style="color: #F2F1ED;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+           </script>
+        </nav>
+
+        <!--BOOKSTORE DETAILS SECTION-->
+        <section id="bookstore" style="display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: #e9d9c1; padding: 20px 0;">
+            <figure style="margin-top: 70px;">
+                <blockquote class="blockquote" style="text-align: center; font-weight: bold; font-family:'Times New Roman', Times, serif; font-size: 50px; color:#470d17;">
+                    <p>Sorfina's Bookstore</p>
+                </blockquote>
+                <figcaption class="blockquote-footer" style="text-align: center; font-size: 20px; font-weight: bold; font-family:'Times New Roman', Times, serif; color: #470d17;">
+                    Software Application Development
+                </figcaption>
+            </figure>
+        </section>
+
+        <section style="background-color: #6E122B; color: #f8f1e8; padding: 50px;">
+            <img src="photos/bookstore.png" alt="banner" style="width: 80%; display: block; margin: 0 auto;">
+            <div style="max-width: 95%; margin: 30px auto 0;">
+        
+                <h2 style="font-weight: bold;">Project Overview</h2>
+        
+                <p>
+                    Sorfina's Bookstore is a responsive web application designed as a digital storefront for a boutique book retailer.
+                    The project focuses on creating an inviting, user-friendly interface that allows customers to browse popular titles across various genres through a modern, grid-based catalog.
+                </p>
+    
+            </div>
+        </section>
+
+
+        <section style="background-color: #6E122B; color: #f8f1e8; padding: 10px 50px;">
+            <div style="max-width: 95%; margin: 0 auto;">
+                <h2 style="font-weight: bold;">Key Features</h2>
+                
+                <ul>
+                    <li>
+                        <span style="font-weight: bold;">Dynamic Responsive Grid:</span>
+                        Uses Bootstrap’s flexbox-based grid system to ensure book cards display perfectly on both mobile and desktop.
+                    </li>
+            
+                    <li><span style="font-weight: bold;">Custom Branding:</span> A unique visual identity using cursive typography and a warm, "bookshelf-inspired" color palette Earth tones/Brown. An unique header featuring a "bookshelf-inspired" color palette and cursive typography (Brush Script MT)</li>
+        
+                    <li><span style="font-weight: bold;">Navigation and Discovery:</span> A Bootstrap-powered navbar that includes a search bar, brand logo and a categorised dropdown menu for book genres</li>
+            
+                    <li><span style="font-weight: bold;">Genre Filtering:</span> Navigation links prepared for various categories including Action, Fiction, Non-fiction, Fantasy and Mystery.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section style="background-color: #6E122B; color: #f8f1e8; padding: 50px 20px; justify-content: center;">
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 30px 40px;">
+                <span style="font-weight: bold; font-size: 25px;">
+                    Homepage
+                </span> 
+                — A dynamic product catalog that showcases a curated selection of books using a responsive grid layout.
+                 Each book is presented within a Bootstrap card component, which includes high-quality cover art, the book title and a direct link to a detailed product page.
+            </p>
+            
+            <img src="photos/bookstore1.png" alt="Bookstore_image1" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+            <br>
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 30px 40px; ">
+                <span style="font-weight: bold; font-size: 25px;">
+                    Genre Filtering
+                </span>
+                 —  Allows users to quickly narrow down the book collection by selecting a specific genre from the dropdown navigation bar.
+                This helps users discover books that match their interests more easily, creating a smoother and more personalized browsing experience without having to scroll through the entire catalogue.
+            </p>
+
+            <img src="photos/bookstore2.png" alt="Bookstore_image2" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+            <br>
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 30px 40px; ">
+                <span style="font-weight: bold; font-size: 25px;">
+                    Details page
+                </span> 
+                — It provides users with comprehensive information about a selected book, including its title, author, published date and synopsis.
+                This page helps users better understand the book before making a decision, ensuring a clearer and more informed browsing experience. </p>
+            <img src="photos/bookstore3.png" alt="Bookstore_image3" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+
+        </section>
+
+
+        <!--INTEREST DETAILS SECTION-->
+        <section id="interest" style="display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: #e9d9c1; padding: 20px 0;">
+            <figure style="margin-top: 30px;">
+                <blockquote class="blockquote" style="text-align: center; font-weight: bold; font-family:'Times New Roman', Times, serif; font-size: 50px; color:#470d17;">
+                    <p>Sorfina's Interests</p>
+                </blockquote>
+                <figcaption class="blockquote-footer" style="text-align: center; font-size: 20px; font-weight: bold; font-family:'Times New Roman', Times, serif; color: #470d17;">
+                    Software Application Development
+                </figcaption>
+            </figure>
+        </section>
+
+        <section style="background-color: #6E122B; color: #f8f1e8; padding: 50px;">
+            <img src="photos/designHeader.png" alt="banner" style="width: 80%; display: block; margin: 0 auto;">
+            <div style="max-width: 95%; margin: 30px auto 0;">
+        
+                <h2 style="font-weight: bold;">Project Overview</h2>
+        
+                <p>
+                    Sorfina’s Interest is a personal, arts-inspired web application designed to showcase my creative hobbies through an expressive and interactive digital space. The website is centered around three key interests—Reading, D.I.Y Crochet and Baking—each represented with its own vibrant visuals, color palette and styled layout to create a playful yet organized user experience.
+                    <br>
+                    This project functions as a creative journal, allowing users to view, add, edit and delete entries related to books read, crochet projects completed and baked recipes. By integrating CRUD functionality, the website goes beyond static content and becomes a living archive that grows alongside personal interests.
+                    <br>
+                    From a design perspective, I focused on creating a lively, artsy aesthetic that reflects my personality. Decorative elements such as flower illustrations, book covers and dessert imagery were intentionally used to enhance visual storytelling and emotional engagement. Bright colors and customized styling help differentiate each interest while maintaining overall consistency across the site.
+                </p>
+    
+            </div>
+        </section>
+
+
+        <section style="background-color: #6E122B; color: #f8f1e8; padding: 10px 50px;">
+            <div style="max-width: 95%; margin: 0 auto;">
+                <h2 style="font-weight: bold;">Key Features</h2>
+                
+                <ul>
+                    <li>
+                        <span style="font-weight: bold;">CRUD Functionality (Create, Read, Update, Delete):</span>
+                        Users can add, view, edit and delete entries for books, crochet projects and baking recipes. This transforms the website from a static display into an interactive personal journal.
+                    </li>
+            
+                    <li>
+                        <span style="font-weight: bold;">Interest-Based Content Sections:</span>
+                        The website is organized into three distinct categories—Reading, D.I.Y Crochet and Baking—each with its own layout, visuals and theme, improving clarity and user navigation.
+                    </li>
+        
+                    <li><span style="font-weight: bold;">Dynamic Content Rendering:</span> 
+                        Content updates automatically without hard-coding, allowing entries to change in real time based on user interactions.
+                    </li>
+            
+                    <li><span style="font-weight: bold;">Custom Visual Styling:</span>
+                        Bright colors, images and decorative elements such as flowers, book covers and dessert visuals are used to reinforce the artsy concept and reflect personal identity.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--HOMEPAGE AND READING PAGE-->
+        <section style="background-color: #6E122B; color: #f8f1e8; padding: 50px 20px; justify-content: center;">
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 20px 0; "><span style="font-weight: bold; font-size: 25px;">Homepage</span> —  It showcases the hobbies I enjoy most → reading, crochet and baking.
+                Each representing a creative outlet and a meaningful part of my everyday life.</p>
+            
+            <img src="photos/interestHP.png" alt="Bookstore_image1" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+            <br>
+            <!--READING LIST PAGE-->
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 20px 0; "><span style="font-weight: bold; font-size: 25px;">Reading List</span> — 
+                 A visual record of my reading journey, where I keep track of completed books and ongoing reads, with the flexibility to update my progress anytime. </p>
+            <img src="photos/readinglist.png" alt="Bookstore_image2" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+            <br>
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 20px 10px; "><span style="font-weight: bold; font-size: 25px;">Editing and Adding page</span> — Edit your reading progress by selecting whether the book is completed or still in progress. </p>
+            <img src="photos/editbook.png" alt="Bookstore_image3" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+
+            <br>
+        
+            <img src="photos/addingbook.png" alt="Bookstore_image3" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+
+            <br>
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 20px 10px; "><span style="font-weight: bold; font-size: 25px;">Prompt message</span> — A confirmation prompt appears before deletion to ensure the user intends to permanently remove the selected book. </p>
+            <img src="photos/promptbook.png" alt="Bookstore_image3" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+
+            <br>
+
+
+        </section>
+
+        <!--CROCHET LIST-->
+        <section style="background-color: #faf3e9; color: #f8f1e8; padding: 50px 20px; justify-content: center;">
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 20px 10px; "><span style="font-weight: bold; font-size: 25px;">Crochet List</span> — A visual collection of my crochet creations, highlighting the tools needed, inspiration sources and progress of each handmade piece.</p>
+            <img src="photos/maincrochet.png" alt="Bookstore_image3" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+
+            <br>
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 20px 10px; "><span style="font-weight: bold; font-size: 25px;">Editing and Adding page</span> — Similar concept as the 'Reading List' editing and adding page.</p>
+            <img src="photos/editcrochet.png" alt="Bookstore_image3" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+
+            <br>
+            <img src="photos/addingcrochet.png" alt="Bookstore_image3" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+        </section>
+
+        <!--BAKING LIST-->
+        <section style="background-color: #6E122B; color: #f8f1e8; padding: 50px 20px; justify-content: center;">
+            <p style="text-align: center; background-color: rgba(75, 13, 27, 0.85); padding: 20px 10px; "><span style="font-weight: bold; font-size: 25px;">Baking List</span> — A curated collection of my baking creations, where each dish is shared with its recipe and the inspiration source behind it. </p>
+            <img src="photos/bakinglist.png" alt="Bookstore_image3" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+
+            <br>
+            <img src="photos/editbaking.png" alt="Bookstore_image3" style="width: 80%; display: block; margin: 0 auto; border-radius: 20px;">
+
+        </section>
+
+        <!--FOOTER-->
+        <footer style="background-color: #1D060A; color: white; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+            
+            <div style="max-width: 1200px; margin: auto;">
+                <div style="display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-bottom: 50px;">
+                
+                <div style="margin-top: 40px; margin-left: 50px;">
+    
+                    <div style="display: flex; gap: 20px;">
+                        <a href="https://www.pinterest.com/irfahsorfina/"><img src="photos/PINTEREST_ICON.png" alt="Pinterest" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.instagram.com/cozyknots.hm/"><img src="photos/IG_ICON.png" alt="Instagram" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.linkedin.com/in/irfah-sorfina"><img src="photos/LinkedIn logo.png" alt="LinkedIn" style="width: 65px; height: auto;"></a>
+                    </div>
+                </div>
+    
+                <div style="margin-top: 55px; display: flex; gap: 60px;">
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                  
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 40px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
+                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1;">
+                        <h2>I`Syntax</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </body>
+</html>

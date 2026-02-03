@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Learn @RP page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+
+    <body style="background-color: #f8eed9;">
+
+        <style>
+        .navbar.scrolled {
+            background-color: rgba(75, 13, 27, 0.85) !important; /* translucent */
+            padding: 1px 8px; /* thinner */
+            backdrop-filter: blur(5px); /* adds subtle blur */
+        }
+        .navbar-brand {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .navbar-brand span {
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+
+        .navbar.scrolled .navbar-brand span {
+            font-size: 15px;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left: 50px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 50px; width: 50px;">
+                    <span class="ms-1 fw-bold" style="color:#F2F1ED; letter-spacing: 0.05em;">I`Syntax</span>
+                </a>
+    
+                <!-- Centered nav items -->
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right: 80px;">
+                    <ul class="navbar-nav gap-5">
+        
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="index.html" style="color: #F2F1ED;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                        </li>
+
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <!-- Projects link -->
+                            <a class="nav-link fs-4" href="projects.html" style="color: #F2F1ED;">Projects</a>
+                             
+                            <!-- Dropdown arrow (split) -->
+                            <a class="nav-link fs-5 dropdown-toggle dropdown-toggle-split p-0" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="vrsection.html">Virtual Reality</a></li>
+                                <li><a class="dropdown-item" href="designs.html">Designs</a></li>
+                                <li><a class="dropdown-item" href="webdev.html">Application Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="contact.html" style="color: #F2F1ED;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+           </script>
+        </nav>
+
+        <!--Ecolin Studio banner-->
+        <section style="display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: #f8eed9; padding: 30px 0;">
+            <figure style="margin-top: 70px;">
+                <blockquote class="blockquote" style="text-align: center; font-weight: bold; font-family:'Times New Roman', Times, serif; font-size: 50px; color:#470d17;">
+                    <p>Learn @RP</p>
+                </blockquote>
+                <figcaption class="blockquote-footer" style="font-size: 25px; text-align: center; font-weight: bold; font-family:'Times New Roman', Times, serif; color: #470d17;">
+                    UI/UX Design for App
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <!--PROBLEM DEFINITION-->
+        <section style="display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 80px 80px; background-color: #6E122B; font-family: 'Poppins', sans-serif;">
+            <div>
+                <h2 style="font-weight: bold; color: #f8eed9;">Problem Definition</h2>
+                <p style="color: #F2F1ED; font-size: 18px;">
+                    RP students want to learn new skills beyond their curriculum but existing platforms are unintuitive and lack content relevant to their needs, making learning on
+                    the go inconvenient and discouraging their motivation to upskill.
+                
+                </p>
+            </div>
+            <br>
+
+            <div>
+                <h2 style="font-weight: bold; color: #f8eed9;">Product Goal</h2>
+                <p style="color: #F2F1ED; font-size: 18px;">
+                    To design a mobile app, Learn@RP, that empowers RP students to develop new skills through short, high-quality video lessons and structured mini courses. The app delivers a personalised learning experience that enables students to explore topics beyond their modules, 
+                    build industry-relevant skills and track their learning progress in a flexible and engaging way.
+                
+                </p>
+            </div>
+        </section>
+
+        <!--LOGO-->
+        <section style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 50px 30px; background-color: #6E122B; font-family: 'Poppins', sans-serif;">
+
+
+            <div style="max-width: 500px; margin-left: 100px; color:  #F2F1ED;">
+                <br>
+                <h5 style="max-width: 500px;">The Learn@RP logo combines clarity, approachability and student-focused learning.</h5>
+                <br>
+                <h5 style="max-width: 500px;">
+                <span style= "font-weight: bold; color:  #f8eed9;" >"@RP"</span> — anchors the product to Republic Polytechnic, reinforcing relevance and familiarity for RP students<br><br>
+
+                <span style= "font-weight: bold; color:  #f8eed9;" >“LEARN”</span> — speech bubble placed above the logo symbolises conversation, guidance and continuous learning, suggesting that knowledge is accessible and shared rather than formal or intimidating
+                </h5>
+                <br>
+                <h5>The soft rounded shapes and friendly typography reflect an inclusive and supportive learning environment, while the green and teal colour palette represents growth, curiosity and personal development. Together, the logo communicates Learn@RP’s purpose as a modern, 
+                    student-centric platform that encourages exploration beyond the classroom in a relaxed and engaging way.
+                </h5>
+
+            </div>
+
+            <div style="flex: 1; text-align: center; position: relative;">
+                <img src="photos/learn@rp.png" alt="learn@RP Logo" data-bs-toggle="modal" data-bs-target="#moodboard" style=" width: 50%; border-radius: 100%;">
+            </div>
+
+        </section>
+
+
+        <section style="background-color: #f8eed9; color: #3D0812; display: flex; justify-content: space-between; align-items: center; padding: 80px 50px; flex-direction: row;  font-family: 'Poppins', sans-serif; ">
+            <div style="max-width: 500px; margin-left: 120px;">
+                <h1 style="font-weight: bolder;">Homepage</h1>
+                <br>
+
+                <p style="max-width: 500px;">
+                The homepage is designed for first-time and guest users, allowing students to explore available courses without logging in.
+                 By removing the login barrier, the app reduces friction and helps users quickly understand the value of Learn@RP before committing to sign up.
+                </p>
+                <ul>
+                    <li>
+                        Allows course browsing without account login
+                    </li>
+                    <li>
+                        Encourages exploration and discovery
+                    </li>
+                    <li>
+                        Keeps non-essential sections minimal until login
+                    </li>
+                </ul>
+
+                <br>
+                <h4 style="font-weight: bold;">Navigation Bar</h4>
+                <p style="max-width: 500px;">
+                The bottom navigation bar follows familiar mobile app conventions, using clear and recognisable icons.
+                </p>
+                <ul>
+                    <li>
+                        Includes Home, Saved and Profile sections
+                    </li>
+                </ul>
+                <br>
+
+                <h4 style="font-weight: bold;">Side Navigation Menu</h4>
+                <p style="max-width: 500px;">
+                    When users tap the hamburger icon on the navigation bar, a side navigation menu slides in from the left, 
+                    providing quick access to key sections of the app.
+                </p>
+                <br>
+
+                <h4 style="font-weight: bold;">Information Hierarchy and Visual Priority</h4>
+                <p>The Courses section is given visual priority as the main focus of the homepage. A consistent colour palette, clear typography hierarchy and concise course descriptions support fast scanning and reduce cognitive load.
+                    Empty sections are kept minimal to avoid clutter and maintain focus on course discovery.
+                </p>
+                <br>
+            
+
+                <h4 style="font-weight: bold;">Readability and Cognitive Load Reduction</h4>
+                <ul>
+                    <li>
+                        Courses section is prioritised as the primary focus
+                    </li>
+                    <li>
+                        Consistent colour palette maintains visual clarity
+                    </li>
+                    <li>
+                       Clear typography hierarchy supports fast scanning
+                    </li>
+                    <li>
+                        Empty sections are intentionally left minimal to avoid clutter and to communicate that additional features will unlock after login.
+                    </li>
+                </ul>
+            </div>
+
+            <div style=" margin-right: 120px; line-height: 1; flex-direction: row; display: flex; gap: 20px;">
+                <img src="photos/homepage.learn.png" alt="learn@rp Homepage" style="width: 100%; height: 600px;">
+                <img src="photos/sidemenu.learn.png" alt="learn@rp Homepage" style="width: 100%; height: 600px;">
+            </div>
+        </section>
+
+        <section style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 80px 50px; background-color: #ddcfb9;">
+
+            <div style="margin-right: 150px; display: flex; align-items: center; justify-content: center; ">
+                <img src="photos/creatacc.learn.png" alt="learn@RP create acc" style="width: 100%; height: 600px;">
+            </div>
+
+            <div style="max-width: 500px; margin-left: 40px;  font-family: 'Poppins', sans-serif; color: #3D0812; ">
+                <h1 style=" margin: 0px; font-weight: bolder;">Create an account Page</h1>
+                <br>
+                <p>The Create Account page is designed to provide a simple, low-friction sign-up experience for RP students. 
+                    The layout is clean and focused, guiding users through registration without distractions.
+                </p>
+                <br>
+
+                <h4 style="font-weight: bold;">Form Design and Usability</h4>
+                <p>The input fields are presented in a clear, linear flow, helping users understand what to fill in step-by-step.
+                    The rounded input boxes and generous spacing improve readability and reduce form fatigue, especially on mobile.
+                </p>
+                <br>
+
+                <h4 style="font-weight: bold;">Visual Hierarchy and Primary Action</h4>
+                <p>The “CREATE AN ACCOUNT” button is styled as the most visually dominant element, making the next step obvious. Supporting text such as “Have an account already? Sign In” 
+                    is placed below as a secondary action, reducing confusion between signing up and logging in.
+                </p>
+                <br>
+
+                <h4 style="font-weight: bold;">Consistency and Trust</h4>
+                <p>
+                    The page maintains consistent branding through the Learn@RP logo, soft colour palette and minimal interface elements. This creates a calm, 
+                    student-friendly feel and builds trust by keeping the process straightforward and predictable.
+                </p>
+            </div>
+            <br>
+
+        </section>
+
+        <section style="background-color: #f8eed9; color: #3D0812; display: flex; justify-content: space-between; align-items: center; padding: 80px 50px; flex-direction: row;  font-family: 'Poppins', sans-serif; gap: 40px;">
+            <div style="max-width: 500px; margin-left: 50px;">
+                <h1 style="font-weight: bolder;">Interest Registration Page</h1>
+                <br>
+        
+                <p>
+                    This page enables users to personalise their learning experience by selecting topics they are interested in. Capturing user interests allows the app to 
+                    deliver relevant course recommendations and reduce the effort required to discover suitable content.
+                </p>
+                <ul>
+                    <li>
+                       Redirects users back to the homepage after interest registration
+                    </li>
+                    <li>
+                        Dynamically updates the Recommended Courses section based on selected interests
+                    </li>
+                    <li>
+                        Supports personalised learning and improves content discoverability
+                    </li>
+                </ul>
+
+            
+            </div>
+        
+
+            <div style="margin-right: 120px; line-height: 1; flex-direction: row; display: flex; gap: 20px;">
+                <img src="photos/interest.learn.png" alt="learn@RP homepage" style="width: 100%; height: 600px;">
+                <img src="photos/interestform.png" alt="learn@RP interestform" style="width: 100%; height: 600px;">
+                <img src="photos/interest list.png" alt="learn@RP interestlist" style="width: 100%; height: 600px;">
+            </div>
+        </section>
+
+        <section style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 80px 50px; background-color: #ddcfb9;">
+
+            <div style="margin-right: 120px; flex-direction: row; display: flex; gap: 20px;">
+                <img src="photos/progress.learn.png" alt="learn@RP homepage after LOGIN" style="width: 100%; height: 500px;">
+                <img src="photos/continue.learn.png" alt="learn@RP homepage after LOGIN" style="width: 100%; height: 500px;">
+            </div>
+
+            <div style="max-width: 500px; font-family: 'Poppins', sans-serif; color: #3D0812; ">
+                <h1 style=" margin: 0px; font-weight: bolder;">Learning Progress & Continuation</h1>
+                <br>
+
+                <p>
+                    For returning users, Learn@RP surfaces learning progress directly on the homepage, allowing students to quickly resume lessons without unnecessary navigation. This design supports flexible, 
+                    on-the-go learning and reduces friction in the continuation flow.
+                </p>
+                <ul>
+                    <li>
+                        Displays course and lesson progress at a glance using visual indicators
+                    </li>
+                    <li>
+                        Allows users to continue lessons directly from the homepage
+                    </li>
+                    <li>
+                        Provides a “Continue?” shortcut on the course details page to resume exactly where users left off
+                    </li>
+                    <li>
+                        Reduces cognitive load by eliminating repeated navigation through course lists
+                    </li>
+                </ul>
+
+        </section>
+
+        <section style="background-color: #f8eed9; color: #3D0812; display: flex; justify-content: space-between; align-items: center; padding: 80px 50px; flex-direction: row;  font-family: 'Poppins', sans-serif; ">
+            <div style="max-width: 500px; margin-left: 120px;">
+                <h1 style="font-weight: bolder;">Lesson Details Page</h1>
+                <br>
+                <p>
+                    The Lesson Details page is designed to support focused, self-paced learning by combining video content with clear instructional structure. Each lesson begins with a short video that introduces 
+                    key concepts, allowing users to learn through visual and audio content.
+                </p>
+                <ul>
+                    <li>
+                       A play button allows users to start the lesson video, while a pause button, positioned beside it,
+                        gives users full control over playback.
+                    <li>
+                        Video controls are kept minimal and placed on the left for easy one-handed access, supporting mobile usability.
+                    </li>
+                    <li>
+                        A back arrow located at the top-left corner enables users to return to the course details page at any time, maintaining a clear and predictable navigation flow.
+                    </li>
+                </ul>
+            </div>
+
+            <div style="margin-right: 150px; flex-direction: row; display: flex; gap: 20px;">
+                <img src="photos/lesson.learn.png" alt="learn@RP lessondetails" style="width: 100%; height: 600px;">
+                <img src="photos/endcourse.learn.png" alt="learn@RP lessondetails" style="width: 100%; height: 600px;">
+            </div>
+        </section>
+
+        <section style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 80px 50px; background-color: #ddcfb9;">
+
+            <div style="margin-right: 180px; flex-direction: row; display: flex; gap: 20px;">
+                <img src="photos/profile.learn.png" alt="learn@RP profile" style="width: 100%; height: 500px;">
+            </div>
+
+            <div style="max-width: 500px; font-family: 'Poppins', sans-serif; color: #3D0812; ">
+                <h1 style=" margin: 0px; font-weight: bolder;">Profile Page</h1>
+                <br>
+                <p>
+                    The Profile page allows users to view and manage their personal information, learning interests and notification preferences in one centralised location. 
+                    The layout is clean and structured to support quick updates without overwhelming the user.
+                </p>
+                <ul>
+                    <li>
+                        Displays essential account details such as username and email address for easy reference
+                    </li>
+                    <li>
+                        Provides a clear option to change password, supporting account security
+                    </li>
+                    <li>
+                        Shows registered learning interests, with an option to update them to keep recommendations relevant
+                    </li>
+                    <li>
+                        Includes notification controls that allow users to toggle app notifications, security alerts, newsletters and email updates
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section style="background-color: #f8eed9; color: #3D0812; display: flex; justify-content: space-between; align-items: center; padding: 80px 50px; flex-direction: row;  font-family: 'Poppins', sans-serif; ">
+            <div style="max-width: 500px; margin-left: 120px;">
+                <h1 style="font-weight: bolder;">Highlighted Features</h1>
+                <br>
+
+                <h4 style="font-weight: bold;">Loading State (Lesson Completion)</h4>
+                <p>
+                   After users tap “Mark as Completed”, a loading state is displayed to indicate that progress is being saved. This provides immediate feedback and reassures users that 
+                   their action is being processed successfully.
+                </p>
+                <ul>
+                    <li>
+                       Displays a clear loading indicator to communicate system status
+                    <li>
+                        Prevents repeated taps or confusion during progress updates
+                    </li>
+                    <li>
+                        Reinforces trust by confirming that lesson completion is being recorded
+                    </li>
+                    <li>
+                        Ensures a smooth transition before updating progress indicators
+                    </li>
+                </ul>
+                <br>
+
+                <h4 style="font-weight: bold;">Dropdown Selection (Interest Registration – School Selection)</h4>
+
+                <p>
+                    The interest registration form uses a dropdown menu for school selection to simplify input and reduce errors. 
+                    By presenting predefined options, users can quickly find and select their school without manual typing.
+                </p>
+                <ul>
+                    <li>
+                        Limits choices to valid options, preventing input errors
+                    </li>
+                    <li>
+                        Improves form efficiency and consistency across users
+                    </li>
+                    <li>
+                        Supports faster completion of the interest registration process
+                    </li>
+                </ul>
+            </div>
+
+            <div style="margin-right: 150px; flex-direction: row; display: flex; gap: 20px;">
+                <img src="photos/dropdown.learn.png" alt="learn@RP dropdown" style="width: 100%; height: 600px;">
+                <img src="photos/loading.learn.png" alt="learn@RP loading" style="width: 100%; height: 600px;">
+            </div>
+        </section>
+
+        <section style="display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 80px 80px; background-color: #ddcfb9; color: #3D0812;">
+            <h1 style=" font-weight: bolder;">UI Kit (Original Design)</h1>
+            <br>
+            <p>
+                All UI components used in Learn@RP were designed and created by me from scratch as part of the graded assignment. This includes form elements, tables, typography styles, colour schemes, icons
+                and system feedback components such as loading states and progress indicators.
+            </p>
+            <p>
+                The UI kit was built to ensure visual consistency, usability and scalability across the app. By designing these components myself, I was able to maintain a cohesive design language 
+                and apply UX principles consistently throughout the user journey.
+            </p>
+        </section>
+
+        <section style="display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 50px 50px; background-color: #ddcfb9;">
+
+            <div style="flex-direction: row; display: flex; gap: 20px;">
+                <img src="photos/form.learn.png" alt="learn@RP form" style="width: 100%; height: 500px;">
+                <img src="photos/table.learn.png" alt="learn@RP table" style="width: 100%; height: 500px;">
+            </div>
+            <br>
+
+            <div style="flex-direction: row; display: flex; gap: 20px;">
+                <img src="photos/icons.learn.png" alt="learn@RP icons" style="width: 100%; height: 500px;">
+                <img src="photos/spinner.learn.png" alt="learn@RP spinner" style="width: 100%; height: 500px;">
+            </div>
+            <br>
+
+            <div style="flex-direction: row; display: flex; gap: 20px;">
+                <img src="photos/colour.learn.png" alt="learn@RP colourscheme" style="width: 100%; height: 500px;">
+            </div>
+
+        </section>
+
+        <section style="display: flex; justify-content: center; align-items: center; padding: 50px 100px; background-color: #6E122B; flex-direction: column;">
+            
+            <div>
+                <video autoplay loop muted style="width: 100%; height: 750px;">
+                    <source src="videos/C218_CA2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <br>
+
+            <p style="color: #e9d9c1; font-weight: bold; font-size: 18px; ">Here's a <a href="https://www.figma.com/design/yiLTkSeva3FHpMlEJwT8QR/C218-CA2--UI-KIT-?node-id=2-497&t=qN7wwRYeMdyp1Byi-1"  style="cursor: pointer; color: #e9d9c1;">link</a> to my Figma's website designs</p>
+
+        </section>
+
+        <!--FOOTER section-->
+        <footer style="background-color: #1D060A; color: F2F1ED; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+            
+            <div style="max-width: 1200px; margin: auto;">
+                <div style="display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-bottom: 50px;">
+                
+                <div style="margin-top: 40px; margin-left: 50px;">
+    
+                    <div style="display: flex; gap: 20px;">
+                        <a href="https://www.pinterest.com/irfahsorfina/"><img src="photos/PINTEREST_ICON.png" alt="Pinterest" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.instagram.com/cozyknots.hm/"><img src="photos/IG_ICON.png" alt="Instagram" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.linkedin.com/in/irfah-sorfina"><img src="photos/LinkedIn logo.png" alt="LinkedIn" style="width: 65px; height: auto;"></a>
+                    </div>
+                </div>
+    
+                <div style="margin-top: 55px; display: flex; gap: 60px;">
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                  
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 40px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
+                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1; color: #F2F1ED;">
+                        <h2>I`Syntax</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

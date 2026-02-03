@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>web development</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+
+    <body style="background-color: #f8eed9;">
+
+        <style>
+        .navbar.scrolled {
+            background-color: rgba(75, 13, 27, 0.85) !important; /* translucent */
+            padding: 1px 8px; /* thinner */
+            backdrop-filter: blur(5px); /* adds subtle blur */
+        }
+        .navbar-brand {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .navbar-brand span {
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+
+        .navbar.scrolled .navbar-brand span {
+            font-size: 15px;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left: 50px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 50px; width: 50px;">
+                    <span class="ms-1 fw-bold" style="color:#F2F1ED; letter-spacing: 0.05em;">I`Syntax</span>
+                </a>
+    
+                <!-- Centered nav items -->
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right: 80px;">
+                    <ul class="navbar-nav gap-5">
+        
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="index.html" style="color: #F2F1ED;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                        </li>
+
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <!-- Projects link -->
+                            <a class="nav-link fs-4" href="projects.html" style="color: #F2F1ED;">Projects</a>
+                             
+                            <!-- Dropdown arrow (split) -->
+                            <a class="nav-link fs-5 dropdown-toggle dropdown-toggle-split p-0" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="vrsection.html">Virtual Reality</a></li>
+                                <li><a class="dropdown-item" href="designs.html">Designs</a></li>
+                                <li><a class="dropdown-item" href="webdev.html">Application Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="contact.html" style="color: #F2F1ED;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+           </script>
+        </nav>
+
+
+        <section style="background-color: #f8eed9;">
+            <div class="banner"></div>
+
+            <figure>
+                <blockquote class="blockquote" style="text-align: center; font-weight: bold; font-family:'Times New Roman', Times, serif; font-size: 50px; color: rgb(88, 9, 9); margin-top: 20px; ">
+                    <p>Software Development</p>
+                </blockquote>
+                <figcaption class="blockquote-footer" style="text-align: center; font-weight: bold; font-size: 20px; font-family:'Times New Roman', Times, serif; color: rgb(88, 9, 9);">
+                    Smart Code. Stunning Sites.
+                </figcaption>
+            </figure>
+
+            <div class="banner"></div>
+        </section>
+
+        <style>
+            .banner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 70px 100px;
+                
+                gap: 40px;
+
+                background-image: url('photos/webdev.jpg');
+                background-size: cover;
+                background-position: center; 
+                position: relative;
+            }
+
+            .banner::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+              
+                z-index: 1;
+            }
+
+            .banner > * {
+                position: relative;
+                z-index: 2;
+            }
+        </style>
+        <br>
+
+        <section style=" padding: 150px 100px; font-family: 'Poppins', sans-serif;">
+            <div style="width: 100%; background-color: #4F0A1D; border-radius: 40px; box-shadow: 0 0 30px #c2b29d; display: flex; padding: 40px 50px;">
+                <img src="photos/designHeader.png" alt="typography" style="left: 50px; width: 75%; height: 320px;">
+                <div style="margin-left: 100px; margin-top: 30px; color: #F2F1ED;">
+                    <h2 style="font-weight: bold;" >
+                        Sorfina's Interest
+                    </h2>
+                    <p style="margin-top: 30px;">
+                        See how Node.js powers a dynamic CRUD application wrapped in a creative, artsy design.
+                    </p>
+
+                    <a href="bookstore_interest.html#interest" style="display: inline-flex; margin-top: 15px; align-items: center; padding: 10px 20px; font-size: 16px; background-color: #6E122B; color: #F2F1ED; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none;">
+                        More details →</a>
+
+                </div>
+                
+
+            </div>
+            <br>
+
+            <div style="width: 100%; background-color: #4F0A1D; border-radius: 40px; box-shadow: 0 0 30px #c2b29d; display: flex; padding: 40px 50px; flex-direction: row-reverse;">
+                <img src="photos/bookstore.png" alt="typography" style="right: 50px; width: 70%; height: 355px;">
+                <div style=" margin-right: 80px; margin-top: 30px; color: #F2F1ED;">
+                    <h2 style="font-weight: bold;" >
+                        Sorfina's Bookstore
+                    </h2>
+                    <p>
+                        Explore a beautifully crafted, responsive digital library designed to bring the cozy
+                         charm of a boutique bookstore to your screen.
+                    </p>
+
+                    <a href="bookstore_interest.html#bookstore" style="display: inline-flex; margin-top: 15px; align-items: center; padding: 10px 20px; font-size: 16px; background-color: #6E122B; color: #F2F1ED; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none;">
+                        More details →</a>
+
+                </div>
+            </div>
+            <br>
+
+            <div style="width: 100%; background-color: #4F0A1D; border-radius: 40px; box-shadow: 0 0 30px #c2b29d; display: flex; padding: 40px 50px;">
+                <img src="photos/travelApp_1.png" alt="typography" style="left: 50px; width: 70%; height: 320px;">
+                <div style="margin-left: 60px; margin-top: 30px; color: #F2F1ED;">
+                    <h2 style="font-weight: bold;" >
+                        Travel App
+                    </h2>
+                    <p style="margin-top: 30px;">
+                        My Travel App is your personal travel organizer that makes trip planning stress-free. Track travel dates, manage packing lists and 
+                        stay on top of every detail with a clean, easy-to-use interface—so you can focus on enjoying your journey.
+                    </p>
+
+                    <a href="pizzaTravel.html#Travel" style="display: inline-flex; align-items: center; padding: 10px 20px; font-size: 16px; background-color: #6E122B; color: #F2F1ED; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none; margin-top: 15px;">
+                        More details →</a>
+
+                </div>
+                
+
+            </div>
+            <br>
+
+            <div style="width: 100%; background-color: #4F0A1D; border-radius: 40px; box-shadow: 0 0 30px #c2b29d; display: flex; padding: 40px 50px; flex-direction: row-reverse;">
+                <img src="photos/pizzaApp_1.png" alt="typography" style="right: 50px; width: 70%; height: 320px;">
+                <div style=" margin-right: 25px; margin-top: 30px; color: #F2F1ED;">
+                    <h2 style="font-weight: bold;" >
+                        Fah's Pizza Co.
+                    </h2>
+                    <p>
+                        Serves up handcrafted pizzas made with fresh ingredients and bold flavors. Explore our menu to discover signature creations, 
+                        customizable options and the story behind every slice that makes our pizzas truly special.
+                    </p>
+
+                    <a href="pizzaTravel.html#Pizza" style="display: inline-flex; align-items: center; padding: 10px 20px; font-size: 16px; background-color: #6E122B; color: #F2F1ED; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none; margin-top: 15px;">
+                        More details →</a>
+
+                </div>
+                
+            </div>
+
+        </section>
+
+        <!--Mobile app development-->
+        <section style="display: flex; justify-content: center; flex-direction: column; align-items: center; text-align: center; background-color: #4F0A1D; padding: 30px 30px;">
+            <figure>
+                <blockquote class="blockquote" style="padding: 20px 100px; font-family:'Times New Roman', Times, serif; color:#F2F1ED; margin-top: 20px; letter-spacing: 2px; border-top: 2px solid #f8f1e8; border-bottom: 2px solid #f8f1e8; display: inline-block;">
+                    <h1 style="font-weight: bold;">Mobile App Development</h1>
+                </blockquote>
+            </figure>
+        </section>
+
+
+        <section style=" padding: 150px 100px; font-family: 'Poppins', sans-serif;">
+            <div style="width: 100%; background-color: #4F0A1D; border-radius: 40px; box-shadow: 0 0 30px #c2b29d; display: flex; padding: 40px 50px;">
+                <img src="photos/MobileApp_CA1.png" alt="TaskManager" style="left: 50px; width: 50%; height: 380px;">
+                <div style="margin-left: 100px; margin-top: 30px; color: #F2F1ED;">
+                    <h2 style="font-weight: bold;" >
+                        Task Manager Application
+                    </h2>
+                    <p style="margin-top: 30px;">
+                        It is designed to help you stay focused and in control of your day. Easily organize tasks, set priorities 
+                        and track progress—all in one simple, intuitive interface that keeps you motivated and on schedule.
+                    </p>
+
+                    <a href="TaskManager.html" style="display: inline-flex; margin-top: 15px; align-items: center; padding: 10px 20px; font-size: 16px; background-color: #6E122B; color: #F2F1ED; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none;">
+                        More details →</a>
+
+                </div>
+                
+
+            </div>
+            <br>
+
+            <div style="width: 100%; background-color: #4F0A1D; border-radius: 40px; box-shadow: 0 0 30px #c2b29d; display: flex; padding: 40px 50px; flex-direction: row-reverse;">
+                <img src="photos/MobileApp_Craft.png" alt="Craftopia" style="right: 50px; width: 50%; height: 380px;">
+                <div style=" margin-right: 40px; margin-top: 50px; color: #F2F1ED;">
+                    <h2 style="font-weight: bold;">
+                        Craftopia
+                    </h2>
+                    <p>
+                        It is a creative inspiration app that lets users explore and organize DIY craft ideas across various categories. 
+                        With visual examples, material lists and the ability to add new crafts,
+                        it encourages creativity and makes discovering and planning craft projects simple and enjoyable.
+                    </p>
+
+                    <a href="bloomCraft.html#Craft" style="display: inline-flex; margin-top: 15px; align-items: center; padding: 10px 20px; font-size: 16px; background-color: #6E122B; color: #F2F1ED; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none;">
+                        More details →</a>
+
+                </div>
+            </div>
+            <br>
+
+            <div style="width: 100%; background-color: #4F0A1D; border-radius: 40px; box-shadow: 0 0 30px #c2b29d; display: flex; padding: 40px 50px;">
+                <img src="photos/MobileApp_BG.png" alt="bloomGrace" style="left: 50px; width: 50%; height: 380px;">
+                <div style="margin-left: 60px; margin-top: 30px; color: #F2F1ED;">
+                    <h2 style="font-weight: bold;" >
+                        Bloom & Grace
+                    </h2>
+                    <p style="margin-top: 30px;">
+                        Bloom & Grace is a fun and interactive flower-themed quiz app that tests your knowledge with beautiful, image-based questions. Challenge yourself,
+                        select answers from dropdowns and get instant feedback to see how well you know your blooms
+                    </p>
+
+                    <a href="bloomCraft.html#Bloom" style="display: inline-flex; margin-top: 15px; align-items: center; padding: 10px 20px; font-size: 16px; background-color: #6E122B; color: #F2F1ED; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none;">
+                        More details →</a>
+
+                </div>
+            </div>
+            
+        </section>
+
+        <footer style="background-color: #1D060A; color: white; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+            
+            <div style="max-width: 1200px; margin: auto;">
+                <div style="display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-bottom: 50px;">
+                
+                <div style="margin-top: 40px; margin-left: 50px;">
+    
+                    <div style="display: flex; gap: 20px;">
+                        <a href="https://www.pinterest.com/irfahsorfina/"><img src="photos/PINTEREST_ICON.png" alt="Pinterest" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.instagram.com/cozyknots.hm/"><img src="photos/IG_ICON.png" alt="Instagram" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.linkedin.com/in/irfah-sorfina"><img src="photos/LinkedIn logo.png" alt="LinkedIn" style="width: 65px; height: auto;"></a>
+                    </div>
+                </div>
+    
+                <div style="margin-top: 55px; display: flex; gap: 60px;">
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                  
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 40px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
+                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1;">
+                        <h2>I`Syntax</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

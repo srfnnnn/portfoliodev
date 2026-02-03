@@ -1,0 +1,248 @@
+.section1 { background-color: #fffef9;
+     font-family: 'Merriweather', Georgia, serif;
+}
+
+.section2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-flex; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #310806;
+    color: #f7e6db;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(102, 48, 57);
+}
+
+
+/* Basic Reset and Font Setup (you'll need to link or import the specific fonts) */
+body {
+    margin: 0;
+    font-family: sans-serif; /* Use a clean, modern font */
+    background-color: #fcfcfc;
+}
+
+/* --- Layout: The main two-column structure --- */
+.contact-page-container {
+    display: flex;
+    max-width: 1200px; /* Optional: Adjust to your desired max width */
+    margin: 0 auto;
+    border-top: 1px solid #ddd; /* Subtle top line under the header */
+}
+
+.image-column {
+    flex: 1; /* Takes up one part of the space */
+    border-right: 2px solid black; /* The main vertical dividing line */
+}
+
+.form-column {
+    flex: 1; /* Takes up one part of the space */
+    padding: 60px 40px; /* Internal spacing for the form content */
+}
+
+
+/* --- Form Styling: Achieving the thick black lines --- */
+.form-content {
+    max-width: 450px;
+    margin: 0 auto; /* Center the form content in its column */
+}
+
+.connect-heading {
+    font-size: 3em;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+
+.script-font {
+    font-family: 'Times New Roman', serif; /* Use a font that looks handwritten/script */
+    font-size: 0.8em;
+    font-style: italic;
+    display: block; /* Ensures 'Let's' is on its own line above 'CONNECT' */
+    margin-bottom: -15px;
+    color: #333;
+}
+
+.form-intro {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Specific styling for the textarea */
+textarea.black-border-input {
+    resize: none; /* Prevent user from resizing the message box */
+}
+
+/* Styling for the Services Select Box */
+.select-wrapper {
+    position: relative;
+    padding-right: 40px; /* Make space for the custom arrow */
+}
+
+.select-wrapper select {
+    appearance: none; /* Hide default select arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* This creates the V-shape for the dropdown indicator */
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    pointer-events: none; /* Allows clicks to go through to the select element */
+}
+
+/* Submit Button Styling */
+.submit-button {
+    padding: 15px 30px;
+    background-color: #f7e0e5; /* The light pink/blush color */
+    color: black;
+    border: 3px solid black; /* A matching thick black border */
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #f0c0c8;
+}
+
+/* --- Header Styling (simplified) --- */
+header {
+    padding: 10px 40px 0;
+    /* You would need more specific CSS here to align the logo, bag, and menu exactly */
+}
+
+.contact-strip {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #666;
+}
+
+.accordion {
+    width: 80%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.accordion-header {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 18px 0;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #F2F1ED;
+    font-weight: bold;
+
+}
+
+.accordion-header:hover {
+    opacity: 0.7;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.accordion-item {
+    border: none;
+    padding-bottom: 10px;
+    background-color: #6E122B;
+}
+
+/* Hidden content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    display: flex;
+    gap: 20px;
+    padding-left: 5px;
+}
+
+.accordion-content img {
+
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* When open */
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+    padding-top: 15px;
+}
+
+.accordion-item.active img {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.accordion-item.active .arrow {
+    transform: rotate(180deg);
+}
+
+
+/* aboutme last sentence*/
+/* .cta-link {
+  color: #F2F1ED;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.cta-link:hover {
+  border-bottom: 1px solid #F2F1ED;
+}
+
+/* index drop message */
+/* .drop-link {
+  color: #4B0D1B;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.drop-link:hover {
+  border-bottom: 1px solid #4B0D1B;
+} */ 

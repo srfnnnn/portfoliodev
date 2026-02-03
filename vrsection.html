@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>virtual reality</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+
+    <body style="background-color: #f8eed9;">
+
+        <style>
+        .navbar.scrolled {
+            background-color: rgba(75, 13, 27, 0.85) !important; /* translucent */
+            padding: 1px 8px; /* thinner */
+            backdrop-filter: blur(5px); /* adds subtle blur */
+        }
+        .navbar-brand {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .navbar-brand span {
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+
+        .navbar.scrolled .navbar-brand span {
+            font-size: 15px;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left: 50px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 50px; width: 50px;">
+                    <span class="ms-1 fw-bold" style="color:#F2F1ED; letter-spacing: 0.05em;">I`Syntax</span>
+                </a>
+    
+                <!-- Centered nav items -->
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right: 80px;">
+                    <ul class="navbar-nav gap-5">
+        
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="index.html" style="color: #F2F1ED;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                        </li>
+
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <!-- Projects link -->
+                            <a class="nav-link fs-4" href="projects.html" style="color: #F2F1ED;">Projects</a>
+                             
+                            <!-- Dropdown arrow (split) -->
+                            <a class="nav-link fs-5 dropdown-toggle dropdown-toggle-split p-0" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="vrsection.html">Virtual Reality</a></li>
+                                <li><a class="dropdown-item" href="designs.html">Designs</a></li>
+                                <li><a class="dropdown-item" href="webdev.html">Application Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="contact.html" style="color: #F2F1ED;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+           </script>
+        </nav>
+
+
+        <section style="background-color: #f8eed9;">
+            <div class="banner"></div>
+
+            <figure>
+                <blockquote class="blockquote" style="text-align: center; font-weight: bold; font-family:'Times New Roman', Times, serif; font-size: 50px; color: rgb(88, 9, 9); margin-top: 20px; ">
+                    <p>Immersive Technologies</p>
+                </blockquote>
+                <figcaption class="blockquote-footer" style="text-align: center; font-weight: bold; font-size: 20px; font-family:'Times New Roman', Times, serif; color: rgb(88, 9, 9);">
+                    Enter. Explore. Experience
+                </figcaption>
+            </figure>
+
+            <div class="banner"></div>
+        </section>
+
+        <style>
+            .banner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 70px 100px;
+                
+                gap: 40px;
+
+                background-image: url('photos/VRbanner.jpg');
+                background-size: cover;
+                background-position: center; 
+                position: relative;
+            }
+
+            .banner::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+              
+                z-index: 1;
+            }
+
+            .banner > * {
+                position: relative;
+                z-index: 2;
+            }
+        </style>
+
+        <section style=" padding: 150px 100px; font-family: 'Poppins', sans-serif;">
+            <div style="width: 100%; background-color: #4F0A1D; border-radius: 40px; box-shadow: 0 0 30px #c2b29d; display: flex; padding: 40px 50px;">
+                <img src="photos/ER_photo.png" alt="typography" style="left: 50px; width: 65%; height: 355px;">
+                <div style="margin-left: 80px; margin-top: 30px; color: #F2F1ED;">
+                    <h2 style="font-weight: bold; font-family: 'Merriweather', Georgia, serif;">
+                        One of Us Has a Secret
+                    </h2>
+                    <p style="margin-top: 30px;">
+                        Falsely accused and trapped in detention, can you uncover the truth before time runs out — or will the secret stay buried?
+                    </p>
+
+                    <br>
+                    
+                    <a href="escape.html" style="display: inline-flex; margin-top: 15px; align-items: center; padding: 10px 30px; font-size: 16px; background-color: #6E122B; color: #F2F1ED; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none;">
+                        More details →</a>
+
+                </div>
+                
+
+            </div>
+            <br>
+
+            <div style="width: 100%; background-color: #4F0A1D; border-radius: 40px; box-shadow: 0 0 30px #c2b29d; display: flex; padding: 40px 50px; flex-direction: row-reverse;">
+                <img src="photos/front.png" alt="typography" style="right: 50px; width: 60%; height: 355px;">
+                <div style=" margin-right: 100px; margin-top: 50px; color: #F2F1ED; margin-left: 30px;">
+                    <h2 style="font-weight: bold; font-family: 'Merriweather', Georgia, serif;" >
+                        Sorfina & Grid
+                    </h2>
+                    <p style="margin-top: 30px;">
+                        A visually minimal name card inspired by grids, networks and digital systems.
+                    </p>
+
+                    <br>
+
+                    <a href="namecard.html" style="display: inline-flex; margin-top: 15px; align-items: center; padding: 10px 30px; font-size: 16px; background-color: #6E122B; color: #F2F1ED; border-radius: 30px; cursor: pointer; font-weight: bold; text-decoration: none;">
+                        More details →</a>
+                </div>
+                
+                
+            </div>
+
+        </section>
+
+        <footer style="background-color: #1D060A; color: white; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+            
+            <div style="max-width: 1200px; margin: auto;">
+                <div style="display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-bottom: 50px;">
+                
+                <div style="margin-top: 40px; margin-left: 50px;">
+    
+                    <div style="display: flex; gap: 20px;">
+                        <a href="https://www.pinterest.com/irfahsorfina/"><img src="photos/PINTEREST_ICON.png" alt="Pinterest" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.instagram.com/cozyknots.hm/"><img src="photos/IG_ICON.png" alt="Instagram" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.linkedin.com/in/irfah-sorfina"><img src="photos/LinkedIn logo.png" alt="LinkedIn" style="width: 65px; height: auto;"></a>
+                    </div>
+                </div>
+    
+                <div style="margin-top: 55px; display: flex; gap: 60px;">
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                  
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 40px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
+                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1;">
+                        <h2>I`Syntax</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

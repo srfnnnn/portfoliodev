@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Projects page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body style="background-color: #f8eed9; ">
+
+        <style>
+        .navbar.scrolled {
+            background-color: rgba(75, 13, 27, 0.85) !important; /* translucent */
+            padding: 1px 8px; /* thinner */
+            backdrop-filter: blur(5px); /* adds subtle blur */
+        }
+        .navbar-brand {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .navbar-brand span {
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+
+        .navbar.scrolled .navbar-brand span {
+            font-size: 15px;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left: 50px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 50px; width: 50px;">
+                    <span class="ms-1 fw-bold" style="color:#F2F1ED; letter-spacing: 0.05em;">I`Syntax</span>
+                </a>
+    
+                <!-- Centered nav items -->
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right: 80px;">
+                    <ul class="navbar-nav gap-5">
+        
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="index.html" style="color: #F2F1ED;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                        </li>
+
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <!-- Projects link -->
+                            <a class="nav-link fs-4" href="projects.html" style="color: #F2F1ED;">Projects</a>
+                             
+                            <!-- Dropdown arrow (split) -->
+                            <a class="nav-link fs-5 dropdown-toggle dropdown-toggle-split p-0" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="vrsection.html">Virtual Reality</a></li>
+                                <li><a class="dropdown-item" href="designs.html">Designs</a></li>
+                                <li><a class="dropdown-item" href="webdev.html">Application Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="contact.html" style="color: #F2F1ED;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+           </script>
+        </nav>
+        
+
+        <section style="display: flex; justify-content: center; align-items: center; padding: 200px 100px; color: #470d17;">
+            <div>
+                <p style="font-family: 'Merriweather', 'Georgia'; font-size: 65px; font-weight: bold; letter-spacing: 10px;"> RECENT WORK</p>
+                <p style="letter-spacing: 3px; font-size: 14px; margin-top: 10px; border-top: 1px solid #470d17; display: block; width: 350px; padding-top: 20px;">One of us has a Secret</p>
+            </div>
+            
+
+            <div>
+                <video autoplay loop muted style="width: 85%; height: 80%; object-fit: cover; border-radius: 50px; margin-left: 120px; box-shadow:0 8px 20px rgba(39, 1, 1, 1)">
+                    <source src="videos/PD_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+        </section>
+
+        <!--2nd section-->
+
+        <section style="height: auto; background-color: #6E122B; color: #f8f1e8; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; font-size: 18px; font-weight: 700; letter-spacing: 1px; padding-top: 50px;  font-family: 'Poppins', sans-serif; ">
+            <h4 style="padding: 20px 100px; letter-spacing: 2px; border-top: 2px solid #f8f1e8; border-bottom: 2px solid #f8f1e8; display: inline-block; margin-bottom: 80px; font-weight: bold;">
+                VIRTUAL REALITY</h4>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col" style="width: 600px; margin-left: 8px;">
+                    <div class="card">
+                        <img src="photos/escape.png" class="class-img-top" alt="banner" style="height: 280px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">One of us has a Secret</h4>
+                            <p style="font-weight: light; color: #470d17;">VR Escape Room</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Immersive Technologies</p>
+                                <a href="escape.html" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 600px;">
+                    <div class="card">
+                        <img src="photos/front.png" class="class-img-top" alt="banner" style="height: 280px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Sorfina & Grid</h4>
+                            <p style="font-weight: light; color: #470d17;">AR Business card</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Immersive Technologies</p>
+                                <a href="namecard.html" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--Design Fundamental of designs-->
+        <section style="padding: 100px 80px; color: #470d17; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; font-size: 18px; font-weight: 700; letter-spacing: 1px; padding-top: 50px;">
+            <h3 style="padding: 15px 100px; letter-spacing: 2px; border-top: 2px solid #470d17; border-bottom: 2px solid #470d17; display: inline-block; margin-bottom: 80px; font-weight: bold;">
+                Designs</h3>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col" style="width: 600px; margin-left: 8px;">
+                    <div class="card">
+                        <img src="photos/brand-banner.png" class="class-img-top" alt="banner" >
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">The Cozy Loop</h4>
+                            <p style="font-weight: light; color: #470d17;">Branding Project</p>
+                    
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Fundamental of Designs</p>
+                                <a href="cozyloop.html" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col" style="width: 600px;">
+                    <div class="card">
+                        <img src="photos/bannertypo.jpg" class="class-img-top" alt="banner" style="height: 225px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Initial Typography</h4>
+                            <p style="font-weight: light; color:#470d17;">Typography Designs</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Fundamental of Designs</p>
+                                <a href="typography.html" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col" style="width: 600px; margin-left: 8px;">
+                    <div class="card">
+                        <img src="photos/ecolin.png" class="class-img-top" alt="banner" >
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Ecolin Studio</h4>
+                            <p style="font-weight: light; color: #470d17;">Branding Project</p>
+                    
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">UI/UX Design for App</p>
+                                <a href="ecolin.html" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="col" style="width: 600px;">
+                    <div class="card">
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: #470d17;">
+                            <img src="photos/design_ca2.png" class="class-img-top" alt="banner" style="height: 260px; width: 60%;">
+
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Learn @RP</h4>
+                            <p style="font-weight: light; color:#470d17;">Student Learning & Skill Development</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">UI/UX Design for App</p>
+                                <a href="learn@rp.html" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        
+        
+
+            
+        
+        </section>
+
+        <!--web development-->
+
+        <section style="padding: 100px 80px; background-color: #6E122B; color: #f8f1e8; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; font-size: 18px; font-weight: 700; letter-spacing: 1px; padding-top: 50px;">
+            <h4 style="padding: 20px 100px; letter-spacing: 2px; border-top: 2px solid #f8f1e8; border-bottom: 2px solid #f8f1e8; display: inline-block; margin-bottom: 80px; font-weight: bold;">
+                WEB DEVELOPMENT</h4>
+
+            <!--project 1-->
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col" style="width: 600px; margin-left: 8px;">
+                    <div class="card">
+                        <img src="photos/designHeader.png" class="class-img-top" alt="banner" style="height: 225px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Sorfina's Interest</h4>
+                            <p style="font-weight: light; color: #470d17;">Interest/hobbies website</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Software Application Development</p>
+                                <a href="bookstore_interest.html#interest" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 600px;">
+                    <div class="card">
+                        <img src="photos/bookstore.png" class="class-img-top" alt="banner" style="height: 225px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Sorfina's Bookstore</h4>
+                            <p style="font-weight: light; color: #470d17;">Bookstore Website</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Software Application Development</p>
+                                <a href="bookstore_interest.html#bookstore" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col" style="width: 600px; margin-left: 8px;">
+                    <div class="card">
+                        <img src="photos/pizzaApp_1.png" class="class-img-top" alt="banner" style="height: 225px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Fah's Pizza Co.</h4>
+                            <p style="font-weight: light; color: #470d17;">Pizza website application</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Web App Development</p>
+                                <a href="pizzaTravel.html#Pizza" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col" style="width: 600px;">
+                    <div class="card">
+                        <img src="photos/travelApp_1.png" class="class-img-top" alt="banner" style="height: 225px;">
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Travel App</h4>
+                            <p style="font-weight: light; color: #470d17;">Travel list website</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Web App Development</p>
+                                <a href="pizzaTravel.html#Travel" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--MOBILE APP developments-->
+        <section style="padding: 100px 80px; color: #470d17; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; font-size: 18px; font-weight: 700; letter-spacing: 1px; padding-top: 50px;">
+            <h3 style="padding: 15px 100px; letter-spacing: 2px; border-top: 2px solid #470d17; border-bottom: 2px solid #470d17; display: inline-block; margin-bottom: 80px; font-weight: bold;">
+                MOBILE DEVELOPMENT</h3>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col" style="width: 600px; margin-left: 8px;">
+                    <div class="card">
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: #470d17;">
+                            <img src="photos/MobileApp_BG.png" class="class-img-top" alt="banner" style="width: 50%; height: 200px;">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Bloom & Grace</h4>
+                            <p style="font-weight: light; color: #470d17;">Quiz application</p>
+                    
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Mobile App Development</p>
+                                <a href="bloomCraft.html#Bloom" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+
+                <div class="col" style="width: 600px;">
+                    <div class="card">
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: #470d17;">
+                            <img src="photos/MobileApp_Craft.png" class="class-img-top" alt="Craftopia" style="width: 50%; height: 200px;">
+
+                        </div>
+                
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Craftopia</h4>
+                            <p style="font-weight: light; color:#470d17;">Ideation</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Mobile App Development</p>
+                                <a href="bloomCraft.html#Craft" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+
+            <div>
+                <div class="col" style="width: 600px;">
+                    <div class="card">
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: #470d17;">
+                            <img src="photos/MobileApp_CA1.png" class="class-img-top" alt="banner" style="width: 50%; height: 210px;">
+                        </div>
+                        
+                        <div class="card-body">
+                            <h4 style="font-weight: bolder; color: #470d17;">Task manager application</h4>
+                            <p style="font-weight: light; color:#470d17;">CA1 project</p>
+
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <p style="font-weight: lighter; color: #8d8687;">Mobile App Development</p>
+                                <a href="TaskManager.html" style="display: inline-flex; font-size: 12px;
+                                align-items: center;
+                                padding: 8px 12px;
+                                background-color: #71122d;
+                                color: #f8f1e8;
+                                border-radius: 25px;
+                                cursor: pointer;
+                                text-decoration: none;">
+                                Visit here →</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+
+        </section>
+
+        <footer style="background-color: #1D060A; color: F2F1ED; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+            
+            <div style="max-width: 1200px; margin: auto;">
+                <div style="display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-bottom: 50px;">
+                
+                <div style="margin-top: 40px; margin-left: 50px;">
+    
+                    <div style="display: flex; gap: 20px;">
+                        <a href="https://www.pinterest.com/irfahsorfina/"><img src="photos/PINTEREST_ICON.png" alt="Pinterest" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.instagram.com/cozyknots.hm/"><img src="photos/IG_ICON.png" alt="Instagram" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.linkedin.com/in/irfah-sorfina"><img src="photos/LinkedIn logo.png" alt="LinkedIn" style="width: 65px; height: auto;"></a>
+                    </div>
+                </div>
+    
+                <div style="margin-top: 55px; display: flex; gap: 60px;">
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                  
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 40px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
+                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1; color: #F2F1ED;">
+                        <h2>I`Syntax</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

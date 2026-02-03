@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Ecolin page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+
+    <body style="background-color: #f8eed9;">
+
+        <style>
+        .navbar.scrolled {
+            background-color: rgba(75, 13, 27, 0.85) !important; /* translucent */
+            padding: 1px 8px; /* thinner */
+            backdrop-filter: blur(5px); /* adds subtle blur */
+        }
+        .navbar-brand {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .navbar-brand span {
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+
+        .navbar.scrolled .navbar-brand span {
+            font-size: 15px;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left: 50px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 50px; width: 50px;">
+                    <span class="ms-1 fw-bold" style="color:#F2F1ED; letter-spacing: 0.05em;">I`Syntax</span>
+                </a>
+    
+                <!-- Centered nav items -->
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right: 80px;">
+                    <ul class="navbar-nav gap-5">
+        
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="index.html" style="color: #F2F1ED;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                        </li>
+
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <!-- Projects link -->
+                            <a class="nav-link fs-4" href="projects.html" style="color: #F2F1ED;">Projects</a>
+                             
+                            <!-- Dropdown arrow (split) -->
+                            <a class="nav-link fs-5 dropdown-toggle dropdown-toggle-split p-0" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="vrsection.html">Virtual Reality</a></li>
+                                <li><a class="dropdown-item" href="designs.html">Designs</a></li>
+                                <li><a class="dropdown-item" href="webdev.html">Application Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="contact.html" style="color: #F2F1ED;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+           </script>
+        </nav>
+
+        <!--Ecolin Studio banner-->
+        <section style="display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: #6E122B;">
+
+            <img src="photos/ecobanner.png" class="class-img-top" alt="Eco banner" style="width: 100%; height: auto; padding: 60px 0; ">
+
+        </section>
+
+        <!--PROBLEM DEFINITION-->
+        <section style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 30px 80px; background-color: #6E122B; font-family: 'Poppins', sans-serif;">
+            <div>
+                <h2 style="font-weight: bold; color: #f8eed9;">Problem Definition</h2>
+                <br>
+                <p style="color: #F2F1ED; font-size: 18px;">
+                    Many existing e-commerce platforms offer sustainable clothing only as a limited category, making it difficult for users to discover, compare and commit to eco-friendly choices. 
+                    This creates friction for users who want to shop sustainably but are faced with poor visibility and scattered product offerings.
+                    <br>
+                    The goal of this web app is to provide a dedicated, sustainability-first shopping experience that increases product discoverability, reduces cognitive effort
+                    and supports positive user decision-making.
+                </p>
+            </div>
+        </section>
+
+        <!--LOGO-->
+        <section style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 30px 30px; background-color: #6E122B; font-family: 'Poppins', sans-serif;">
+
+
+            <div style="max-width: 500px; margin-left: 100px; ">
+                <br>
+                <h5 style="max-width: 500px; color: #F2F1ED;">
+                <span style= "font-weight: bold; color:  #f8eed9;" >Eco</span> — Eco-friendly, instantly communicates sustainability, conscious living and environmental responsibility<br><br>
+
+                <span style= "font-weight: bold; color:  #f8eed9;" >Lin</span> — Linen, natural, sustainable fabric, durability and breathability<br><br>
+                — A modern, minimalist, eco-conscious fashion brand that focuses on natural materials, clean design and thoughtful craftsmanship.
+                </h5>
+                <br>
+
+            </div>
+
+            <div style="flex: 1; text-align: center; position: relative;">
+                <img src="photos/ecolinLOGO.png" alt="Eco Logo" data-bs-toggle="modal" data-bs-target="#moodboard" style=" width: 50%; border-radius: 100%;">
+            </div>
+
+        </section>
+
+
+        <section style="background-color: #f8eed9; color: #3D0812; display: flex; justify-content: space-between; align-items: center; padding: 80px 50px; flex-direction: row;  font-family: 'Poppins', sans-serif; ">
+            <div style="max-width: 500px; margin-left: 120px;">
+                <h1 style="font-weight: bolder;">Homepage</h1>
+                <br>
+
+                <h4 style="font-weight: bold;">Navigation Bar</h4>
+                <p style="max-width: 500px;">
+                The navigation bar uses a simple and familiar structure with standard e-commerce sections such as Home, Shop, Sustainability, About Us and Contact. This follows common web conventions, making the interface intuitive for first-time users.
+                Key actions like search and cart access are positioned where users naturally expect them, supporting quick and effortless navigation.
+                </p>
+
+                <br>
+
+                <br>
+                <h4 style="font-weight: bold;">Information Hierarchy and Visual Priority</h4>
+                <p style="max-width: 500px;">
+                The homepage is structured using clear visual hierarchy, a key UX principle that helps users quickly understand content importance.
+                </p>
+                <ul>
+                    <li>
+                        A limited, cohesive colour palette with earthy tones is used to maintain visual consistency and reduce distraction
+                    </li>
+                    <li>
+                        Typography hierarchy distinguishes headings, labels and body text for fast scanning
+                    </li>
+                    <li>
+                        Short, descriptive labels such as Feature Collections and Organic Cotton Essentials provide clarity without overwhelming the user
+                    </li>
+                </ul>
+                <br>
+
+                <h4 style="font-weight: bold;">Readability and Cognitive Load Reduction</h4>
+                <ul>
+                    <li>
+                        A limited, cohesive colour palette with earthy tones is used to maintain visual consistency and reduce distraction
+                    </li>
+                    <li>
+                        Typography hierarchy distinguishes headings, labels and body text for fast scanning
+                    </li>
+                    <li>
+                        Short, descriptive labels such as Feature Collections and Organic Cotton Essentials provide clarity without overwhelming the user
+                    </li>
+                </ul>
+            </div>
+
+            <div style="margin-right: 150px; font-size: 80px; line-height: 1; font-weight: 900; color:#3D0812;">
+                <img src="photos/Homepage_1.png" alt="Eco Homepage" style="width: 100%; height: 600px;">
+            </div>
+        </section>
+
+        <section style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 80px 50px; background-color: #ddcfb9;">
+
+            <div style="flex: 1; text-align: center; position: relative;">
+                <img src="photos/ShopPage.png" alt="Eco Shop" style="width: 50%; height: 800px;">
+            </div>
+
+            <div style="max-width: 500px; margin-left: 40px;  font-family: 'Poppins', sans-serif; color: #3D0812; ">
+                <h1 style=" margin: 0px; font-weight: bolder;">Shop Page</h1>
+                <br>
+                <h4 style="font-weight: bold;">Readability Details</h4>
+                <ul>
+                    <li>
+                        Typography Hierarchy - There is a clear distinction between the Product Name (Bold), the Category (Small caps/Lightweight) and the Price (Bold). This allows users to "scan" the page quickly to find what they need.
+                    </li>
+                    <li>
+                        High Contrast - Even though the background is tinted, the dark charcoal/black text provides high contrast, making it readable for users with visual impairments or those viewing on low-brightness screens.
+                    </li>
+                    <li>
+                        Clean Sans-Serif Font - The font choice is modern and legible, which helps in maintaining a professional "premium" feel for the sustainable goods.
+                    </li>
+                </ul>
+                <br>
+
+                <h4 style="font-weight: bold;">Usability</h4>
+                <ul>
+                    <li>
+                        Color Swatches on Cards - allows users to see available colors without clicking into the product page. This reduces "friction" and makes the shopping experience faster.
+                    </li>
+                    <li>
+                        Wishlist Integration - The heart icon on each product card allows for "window shopping." Users can save items and come back later, which is a key behavior in online fashion retail.
+                    </li>
+                    <li>
+                        Breadcrumbs - The "Homepage > Shop" text helps users understand their current location within the site's architecture, making navigation intuitive.
+                    </li>
+                </ul>
+                <br>
+
+                <h4 style="font-weight: bold;">Accessibility and Easy Access</h4>
+                <ul>
+                    <li>
+                        Categorization - Labeling products clearly (e.g., "WOMEN" or "MEN" above the product title) ensures that users don't spend time clicking on items that aren't relevant to them.
+                    <li>
+                        Prominent Search and Cart - The top-right icons (Search, Cart, Profile) are in the "standard" locations where users expect to find them, following Jacob’s Law, which states that users prefer your site to work the same way as all the other sites they already know.
+                    </li>
+                </ul>
+            </div>
+            <br>
+
+        </section>
+
+        <section style="background-color: #f8eed9; color: #3D0812; display: flex; justify-content: space-between; align-items: center; padding: 80px 50px; flex-direction: row;  font-family: 'Poppins', sans-serif; ">
+            <div style="max-width: 500px; margin-left: 120px;">
+                <h1 style="font-weight: bolder;">Product Page</h1>
+                <br>
+                <h4 style="font-weight: bold;">Readability and Usability Details</h4>
+                <ul>
+                    <li>
+                        Size and Fit Transparency - Including a "Size Guide" link right above the size selectors reduces purchase anxiety—a major friction point in online shopping.
+                    <li>
+                        Tactile Feedback - The size buttons (S, M, L, etc.) are large and clearly outlined. On mobile, these act as "touch targets" that are easy to tap without accidental clicks.
+                    </li>
+                    <li>
+                        Interactive Swatches - Using actual color circles rather than just text labels allows for a faster cognitive understanding of the product options.
+                    </li>
+                </ul>
+            </div>
+
+            <div style="margin-right: 150px; font-size: 80px; line-height: 1; font-weight: 900;">
+                <img src="photos/ProductPage_1.png" alt="Eco Product" style="width: 100%; height: 600px;">
+            </div>
+        </section>
+
+        <section style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 80px 50px; background-color: #ddcfb9;">
+
+            <div style="flex: 1; text-align: center; position: relative;">
+                <img src="photos/CartPage.jpg" alt="Eco cart" style="width: 40%; height: 750px;">
+            </div>
+
+            <div style="max-width: 500px; font-family: 'Poppins', sans-serif; color: #3D0812; ">
+                <h1 style=" margin: 0px; font-weight: bolder;">Cart Page</h1>
+                <br>
+                <h4 style="font-weight: bold;">Usability and User Feedback</h4>
+                <ul>
+                    <li>
+                        Stock Transparency - Phrases like "5 pieces in stock" or "1 piece in stock" are excellent usability features. They provide immediate feedback, 
+                        helping the user decide if they need to buy now or can wait, without the frustration of finding out an item is "Sold Out" at the very last second.
+                    <li>
+                        Easy Quantity Adjustments - The large, pill-shaped +/- buttons are highly accessible. They provide a large "hit area" for fingers on mobile devices, 
+                        making it easy to change quantities without needing to navigate back to the product page.
+                    </li>
+                    <li>
+                        Prominent Checkout Button - The dark green "Checkout" button uses the highest contrast on the page. This creates a clear Call to Action (CTA), guiding the user toward the final goal without any visual confusion.
+                    </li>
+                </ul>
+                <br>
+
+                <h4 style="font-weight: bold;">Accessibility and Navigation</h4>
+                <ul>
+                    <li>
+                        "Continue Shopping" Link - Placed at the top right, this provides a quick "exit" for users who aren't finished browsing. It respects the user's time and choice.
+                    </li>
+                    <li>
+                        Comprehensive Footer - The footer provides easy access to "Our Story," "FAQs," and "Shipping & Returns." For a sustainable brand, having the "Our Story" link visible here
+                        is a great way to remind the user why their purchase matters (supporting eco-friendly practices).
+                    </li>
+                </ul>
+            </div>
+            <br>
+
+        </section>
+
+        <section style="background-color: #f8eed9; color: #3D0812; display: flex; justify-content: space-between; align-items: center; padding: 80px 50px; flex-direction: row;  font-family: 'Poppins', sans-serif; ">
+            <div style="max-width: 500px; margin-left: 120px;">
+                <h1 style="font-weight: bolder;">Checkout Page</h1>
+                <br>
+                <h4 style="font-weight: bold;">The "Enclosed" Checkout Strategy</h4>
+                <p>The absence of a navbar and footer is a deliberate usability choice to prevent "transaction leakage".</p>
+                <ul>
+                    <li>
+                        Persistent Order Summary - On the right side, the user can always see exactly what they are buying (e.g., the Crepe Linen Set and Cotton Linen Top). 
+                        This constant visibility builds trust and prevents the need to click "Back" to verify the order.
+                    <li>
+                        Visual Validation - Including thumbnails of the products helps the user feel a "happy" connection to their choices right until the final click.
+                    </li>
+                </ul>
+                <br>
+
+                <h4 style="font-weight: bold;">Split-Screen Information Architecture</h4>
+                <ul>
+                    <li>
+                        Focus on Security - When users reach the payment stage, they can feel anxious about data privacy. Removing links to other pages keeps them focused on the task and reduces 
+                        the chance they will accidentally navigate away and lose their progress.
+                    <li>
+                        Clean Information Flow - The path is linear—Contact > Shipping > Payment—ensuring the user doesn't get overwhelmed by the "lots and lots of products" they just saw.
+                    </li>
+                </ul>
+                <br>
+
+                <h4 style="font-weight: bold;">Usability and Localized Trust</h4>
+                <ul>
+                    <li>
+                        Flexible Payment - Offering modern, local options like PayNow, Atome and GrabPayLater ensures that sustainable shopping is financially accessible to a wider audience.
+                    <li>
+                        The "Lock" Icon - Placing a lock icon on the "Place Order Now" button is a subtle but powerful visual cue that the transaction is encrypted and safe.
+                    </li>
+                </ul>
+            </div>
+
+            <div style="margin-right: 150px; font-size: 80px; line-height: 1; font-weight: 900; color:#f8f1e8;">
+                <img src="photos/CheckoutPage.jpg" alt="Eco checkout" style="width: 100%; height: 700px;">
+            </div>
+        </section>
+
+        <section style="display: flex; justify-content: center; align-items: center; padding: 50px 100px; background-color: #6E122B; flex-direction: column;">
+            
+            <div>
+                <video autoplay loop muted style="width: 80%; height: 90%; margin-left: 130px;">
+                    <source src="videos/C218 design.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+            </div>
+
+            <br>
+
+            <p style="color: #e9d9c1; font-weight: bold; font-size: 18px; ">Here's a <a href="https://www.figma.com/design/jBJOAtEG1H6noQCEbXi4qe/CA1-C218?node-id=1-2&t=0TKD4iD3OeAdl4Ys-1"  style="cursor: pointer; color: #e9d9c1;">link</a> to my Figma's website designs</p>
+
+        </section>
+
+        <!--FOOTER section-->
+        <footer style="background-color: #1D060A; color: F2F1ED; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+            
+            <div style="max-width: 1200px; margin: auto;">
+                <div style="display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-bottom: 50px;">
+                
+                <div style="margin-top: 40px; margin-left: 50px;">
+    
+                    <div style="display: flex; gap: 20px;">
+                        <a href="https://www.pinterest.com/irfahsorfina/"><img src="photos/PINTEREST_ICON.png" alt="Pinterest" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.instagram.com/cozyknots.hm/"><img src="photos/IG_ICON.png" alt="Instagram" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.linkedin.com/in/irfah-sorfina"><img src="photos/LinkedIn logo.png" alt="LinkedIn" style="width: 65px; height: auto;"></a>
+                    </div>
+                </div>
+    
+                <div style="margin-top: 55px; display: flex; gap: 60px;">
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                  
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 40px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
+                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1; color: #F2F1ED;">
+                        <h2>I`Syntax</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Bloom & Craft page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body style="background-color: #f8eed9; ">
+
+        <style>
+        .navbar.scrolled {
+            background-color: rgba(75, 13, 27, 0.85) !important; /* translucent */
+            padding: 1px 8px; /* thinner */
+            backdrop-filter: blur(5px); /* adds subtle blur */
+        }
+        .navbar-brand {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .navbar-brand span {
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+
+        .navbar.scrolled .navbar-brand span {
+            font-size: 15px;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left: 50px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 50px; width: 50px;">
+                    <span class="ms-1 fw-bold" style="color:#F2F1ED; letter-spacing: 0.05em;">I`Syntax</span>
+                </a>
+    
+                <!-- Centered nav items -->
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right: 80px;">
+                    <ul class="navbar-nav gap-5">
+        
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="index.html" style="color: #F2F1ED;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                        </li>
+
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <!-- Projects link -->
+                            <a class="nav-link fs-4" href="projects.html" style="color: #F2F1ED;">Projects</a>
+                             
+                            <!-- Dropdown arrow (split) -->
+                            <a class="nav-link fs-5 dropdown-toggle dropdown-toggle-split p-0" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="vrsection.html">Virtual Reality</a></li>
+                                <li><a class="dropdown-item" href="designs.html">Designs</a></li>
+                                <li><a class="dropdown-item" href="webdev.html">Application Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="contact.html" style="color: #F2F1ED;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+           </script>
+        </nav>
+
+        <section id="Bloom" style="display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: #6E122B;">
+            
+            <img src="photos/BloomBanner.png" class="class-img-top" alt="banner" style="width: 100%; padding: 70px 0;">
+
+            <div style="margin-top: 30px; padding: 50px 60px; color: #F2F1ED;">
+                <h2 style="font-weight: bold; color: #f8eed9;">
+                    Discover, Guess and Learn
+                </h2>
+                <p>
+                    Bloom & Grace is a visually engaging flower-themed quiz app designed to test users’ knowledge of flowers in a simple and interactive way. 
+                    The app presents a series of image-based questions where users select their answers from dropdown menus. Once all questions are completed, 
+                    users can submit their responses and instantly receive feedback on their performance.
+                </p>
+            </div>
+
+            <h1 style="font-weight: bold; background-color: #f8eed9; color: #470d17; padding: 10px 0; width: 95%; text-align: center; margin-top: 20px;">
+                Key Features
+            </h1>
+            <br>
+
+            <!--CRAFT DROPDOWN-->
+            <div style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 40px 50px;">
+                <div style="flex: 1; text-align: center; position: relative;">
+                    <img src="photos/mobile_BG_3.png" alt="Bloom & Grace dropdown" style="width: 100%; height: 600px;">
+            
+                </div>
+
+            
+                <div style="max-width: 500px; margin-left: 120px; font-family: 'Poppins', sans-serif; ">
+                
+                    <h1 style="margin: 0px; color: #f8eed9; font-weight: bold;">
+                        Dropdown Answer Selection
+                    </h1>
+                    <br>
+            
+                    <p style="color: #F2F1ED;">This feature allows users to identify flowers by selecting an answer from a multiple-choice dropdown.
+                         A flower image is displayed with a question prompt, encouraging visual recognition before answering.
+                    </p>
+                    <br>
+                    
+                    <p style="color: #F2F1ED;">
+                        When users tap “Choose an answer”, a dropdown menu appears with selectable options. 
+                        This keeps the interface simple and uncluttered while providing an intuitive, mobile-friendly interaction.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--RESULT FEEDBACK-->
+            <div style="display: flex; justify-content: center; flex-direction: row; align-items: center; padding: 40px 50px;">
+
+                <div style="max-width: 500px; margin-left: 40px;  font-family: 'Poppins', sans-serif; ">
+                
+                    <h1 style="margin: 0px; color: #f8eed9; font-weight: bold;">
+                        Instant Results Feedback
+                    </h1>
+                    <br>
+
+                    <p style="color: #F2F1ED;">After submitting all answers, a message appears showing the number of correct answers</p>
+                    <br>
+                </div>
+
+                <div style="flex: 1; text-align: center; position: relative;">
+                    <img src="photos/mobile_BG_4.png" alt="BloomGrace" style="width: 70%;">
+            
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <div>
+                <div>
+                    <video autoplay loop muted style="width: 80%; height: 800px; margin-left: 50px;">
+                        <source src="videos/BG_recording.webm" type="video/mp4">
+                        Your browser does not support the video tag.
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--CRAFTOPIA-->
+        <section id="Craft" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+            
+            <img src="photos/CraftopiaBanner.png" class="class-img-top" alt="craftopia banner" style="width: 100%; padding: 5px 0;">
+
+            <div style=" padding: 50px 60px; color: #470d17;">
+                <h5>
+                    Craftopia is a creative craft inspiration app designed to help users explore, organize and discover DIY craft ideas.
+                    The app showcases different craft categories, such as paper crafts and eco-friendly projects, with visual examples and required materials listed for each craft.
+                    Users can also add new crafts, making the app interactive and expandable for personal creativity
+                </h5>
+            </div>
+            <br>
+
+            <h1 style="font-weight: bold; background-color: #6E122B; color: #f8f1e8; padding: 10px 0; width: 95%; text-align: center;">
+                App Design Overview
+            </h1>
+
+            <!-- App Screenshots -->
+    
+            <div style="display: flex; justify-content: center; gap: 40px; padding: 40px 50px;">
+        
+                <img 
+                src="photos/mobile_Craft_1.png" 
+                alt="Craftopia mobile screen 1"
+                style="width: 50%; height: 800px;"
+                >
+        
+                <img 
+                src="photos/mobile_Craft_2.png" 
+                alt="Craftopia mobile screen 2"
+                style="width: 50%; height: 800px;"
+                >
+    
+            </div>
+
+            <!-- Design Explanation -->
+    
+            <div style= "padding: 50px 60px; max-width: 900px; color: #470d17;">
+
+                <h2 style="font-weight: bold;">Clean and Friendly Layout</h2>
+                <br>
+                <p>
+                    The app uses a vertical card-based layout that is easy to scroll and navigate on mobile 
+                    devices. Each craft is displayed in a clear, structured card with an image, title and 
+                    materials list.
+                </p>
+        
+                <h2 style="font-weight: bold;">Color Palette</h2>
+                <p>
+                    Pastel tones like pink, blue and brown are used throughout the interface to create a 
+                    warm, calming and creative atmosphere that suits a DIY and crafting theme.
+                </p>
+        
+                <h2 style="font-weight: bold;">Clear Visual Hierarchy</h2>
+                <ul>
+                    <li>The app title “Craftopia” is prominently displayed at the top, making branding clear.</li>
+                    <li>Category headers such as “Paper & Card” and “Eco & Upcycling” help users quickly 
+                        identify different types of crafts.
+                    </li>
+
+                </ul>
+                </div>
+
+        </section>
+
+
+        <footer style="background-color: #1D060A; color: F2F1ED; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+            
+            <div style="max-width: 1200px; margin: auto;">
+                <div style="display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-bottom: 50px;">
+                
+                <div style="margin-top: 40px; margin-left: 50px;">
+    
+                    <div style="display: flex; gap: 20px;">
+                        <a href="https://www.pinterest.com/irfahsorfina/"><img src="photos/PINTEREST_ICON.png" alt="Pinterest" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.instagram.com/cozyknots.hm/"><img src="photos/IG_ICON.png" alt="Instagram" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.linkedin.com/in/irfah-sorfina"><img src="photos/LinkedIn logo.png" alt="LinkedIn" style="width: 65px; height: auto;"></a>
+                    </div>
+                </div>
+    
+                <div style="margin-top: 55px; display: flex; gap: 60px;">
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                  
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 40px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
+                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1; color: #F2F1ED;">
+                        <h2>I`Syntax</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

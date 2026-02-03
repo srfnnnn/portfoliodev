@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>About me's page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body style="background-color: #f8eed9;">
+
+        <style>
+        .navbar.scrolled {
+            background-color: rgba(75, 13, 27, 0.85) !important; /* translucent */
+            padding: 1px 8px; /* thinner */
+            backdrop-filter: blur(5px); /* adds subtle blur */
+        }
+        .navbar-brand {
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img {
+            transition: all 0.3s ease;
+            width: 70px;
+            height: 70px;
+        }
+
+
+        .navbar.scrolled .navbar-brand img {
+            width: 40px;
+            height: 40px;
+        }
+
+
+        .navbar-brand span {
+            transition: all 0.3s ease;
+            font-size: 20px;
+        }
+
+
+        .navbar.scrolled .navbar-brand span {
+            font-size: 15px;
+        }
+        </style>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="index.html" style="margin-left: 50px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 50px; width: 50px;">
+                    <span class="ms-1 fw-bold" style="color:#F2F1ED; letter-spacing: 0.05em;">I`Syntax</span>
+                </a>
+    
+                <!-- Centered nav items -->
+                <div class="collapse navbar-collapse justify-content-center" style="margin-right: 80px;">
+                    <ul class="navbar-nav gap-5">
+        
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="index.html" style="color: #F2F1ED;">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                        </li>
+
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <!-- Projects link -->
+                            <a class="nav-link fs-4" href="projects.html" style="color: #F2F1ED;">Projects</a>
+                             
+                            <!-- Dropdown arrow (split) -->
+                            <a class="nav-link fs-5 dropdown-toggle dropdown-toggle-split p-0" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </a>
+                            
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="vrsection.html">Virtual Reality</a></li>
+                                <li><a class="dropdown-item" href="designs.html">Designs</a></li>
+                                <li><a class="dropdown-item" href="webdev.html">Application Development</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-4" href="contact.html" style="color: #F2F1ED;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <script>
+            window.addEventListener("scroll", function() {
+                const navbar = document.querySelector(".navbar");
+                if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+           </script>
+        </nav>
+
+        
+        <!--INTRODUCTION SECTION-->
+        <section style="display: flex; justify-content: space-between; align-items: center; padding: 200px 100px; gap: 40px;  font-family: 'Poppins', sans-serif;">
+            <div style="margin-left: 25px; font-size: 80px; line-height: 1;  color:#5F1219">
+                <p style="font-weight: 800; ">Irfah <br> Sorfina.</p>
+                <p style="letter-spacing: 3px; font-size: 14px; font-weight: 800;  margin-top: 10px; border-top: 1px solid #641e1e; display: block; width: 350px; padding-top: 20px;">WEB DEVELOPER. DESIGNER</p>
+                <p style="margin-top: 25px; font-size: 16px; color: #5F1219; width: 500px; line-height: 1.6;">
+                    I am a second-year student pursuing a Diploma in Digital Design and Development at Republic Polytechnic. I enjoy discovering new possibilities within the IT and creative tech space.
+                    I am motivated by learning, growing and applying my knowledge in ways that can make a positive impact on those around me.
+                    I am always open to connecting with others—whether for collaboration, shared learning or project opportunities that help us progress together. 
+                    I approach every task with commitment, curiosity and a strong drive to deliver meaningful work.
+
+                </p>
+            </div>
+
+           <div>
+            <img src="photos/profile.jpg" alt="profile" style="margin-right: 20px; height: 550px; width: 400px; border-radius: 60px; box-shadow: 0 8px 20px rgba(39, 1, 1, 1)"> 
+           </div>
+
+
+        </section>
+
+        <!--2nd section/ about me-->
+        
+        <section style="height: 500px; background-color: #6E122B; color: #f8f1e8; display: flex; justify-content: space-between; align-items: center; padding: 0 50px; flex-direction: row; ">
+            <div style="max-width: 500px; margin-left: 120px;  font-family: 'Poppins', sans-serif;">
+                <p style="font-size: 18px; max-width: 500px; ">
+                Beyond academics, I enjoy exploring creativity through both digital and hands-on mediums. 
+                I have a strong interest in design and love experimenting with handcrafted works such as crocheting, beading and other creative projects, which has helped me develop patience, attention to detail and an eye for aesthetics. 
+                These experiences influence my approach to digital design, where I strive to create thoughtful and user-friendly experiences.
+                 In the future, I aspire to pursue a career in a web design or creative tech company, where I can continue growing my skills and contribute meaningful designs that blend functionality with creativity.
+                </p>
+            </div>
+
+            <div style="margin-right: 150px; font-size: 90px; line-height: 1; font-weight: 900; color:#f8f1e8">
+                <p>About<br>.me</p>
+            </div>
+        
+            
+        </section>
+
+        <section style="background-color: #6E122B; color: #f8f1e8; padding: 80px 0; display: flex; justify-content: center; font-family: 'Poppins', sans-serif;">
+            <div class="accordion">
+                
+                <div class="accordion-item" >
+                    <button class="accordion-header" style="border-bottom: 2px solid #f8f1e8; display: inline-block;">
+                        <span>Design Tools</span>
+                        <span class="arrow">&#9662;</span>
+                    </button>
+        
+                    <div class="accordion-content">
+            
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/Adobe_illustrator.png" alt="Illustrator" style="width: 60px; height: 60px;">
+                            <p>Adobe Illustrator</p>
+                        </div>
+            
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/Adobe_photoshop.png" alt="Photoshop" style="width: 60px; height: 60px;">
+                            <p>Adobe Photoshop</p>
+                        </div>
+            
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/figma.png" alt="Figma" style="width: 80px; height: 80px;">
+                            <p>Figma</p>
+                        </div>
+            
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/canva.png" alt="Canva" style="width: 80px; height: 80px;">
+                            <p>Canva</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header" style="border-bottom: 2px solid #f8f1e8; display: inline-block;">
+                        <span>Development Tools</span>
+                        <span class="arrow">&#9662;</span>
+                    </button>
+        
+                    <div class="accordion-content">
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/VS_code.png" alt="VS Code" style="width: 70px; height: 70px;">
+                            <p>Visual Studio Code</p>
+                        </div>
+            
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/github.jpg" alt="GitHub" style="width: 100px; height: 60px; border-radius: 10px;">
+                            <p style="margin-top: 10px;">Github</p>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/mysql.png" alt="mySQL" style="width: 90px; height: 60px; border-radius: 10px;">
+                            <p style="margin-top: 10px;">MySQL</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <button class="accordion-header" style="border-bottom: 2px solid #f8f1e8; display: inline-block;">
+                        <span>Mobile/Web Tools</span>
+                        <span class="arrow">&#9662;</span>
+                    </button>
+        
+                    <div class="accordion-content">
+            
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/webstorm.png" alt="Webstorm" style="width: 60px; height: 60px;">
+                            <p>WebStorm</p>
+                        </div>
+            
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/androidStudio.png" alt="AndroidStudio" style="width: 60px; height: 60px;">
+                            <p>Android Studio</p>
+                        </div>
+            
+                        <div style="display: flex; flex-direction: column; align-items: center;">
+                            <img src="photos/react.png" alt="React" style="width: 60px; height: 60px;">
+                            <p>React/React-Native</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+            const items = document.querySelectorAll(".accordion-item");
+            items.forEach(item => {
+                item.querySelector(".accordion-header").addEventListener("click", () => {
+                    
+                    items.forEach(i => {
+                        if (i !== item) i.classList.remove("active");
+                    });
+                    
+                    item.classList.toggle("active");
+                });
+            });
+            </script>
+
+
+        </section>
+
+        <section style="background-color: #6E122B; color: #F2F1ED; padding: 120px 50px; display: flex; flex-direction: column; justify-content: center; font-family: 'Poppins', sans-serif;">
+            <div style=" text-align: center; position: relative;">
+                <h2 style="font-weight: bold;">HackerRank - React (Basic)</h2>
+                <br>
+                <img src="photos/Hackerrank_react.png" alt="ReactCert" style="width: 70%; height: 680px;">
+            </div>
+            <br>
+
+            <div style="text-align: center; position: relative; margin-top: 100px;">
+                <h2 style="font-weight: bold;">HackerRank - JaveScript (Basic)</h2>
+                <br>
+                <img src="photos/Hackerrank_js.png" alt="JSCert" style="width: 70%; height: 680px;">
+            </div>
+            <br>
+
+            <div style="text-align: center; position: relative; margin-top: 100px;">
+                <h2 style="font-weight: bold;">HackerRank - SQL (Basic)</h2>
+                <br>
+                <img src="photos/Hackerrank_sql.png" alt="SQLCert" style="width: 70%; height: 680px;">
+            </div>
+
+        </section>
+        
+
+        <section style="background-color: #6E122B; color: #F2F1ED;  display: flex; justify-content: center; font-family: 'Poppins', sans-serif;">
+            <a href="files/DDDD_Resume_Final.pdf" download>
+                <button style="background-color: #781F37; border-color: #43101e; color: white; font-weight: bold; font-size: 18px;padding: 20px 40px; border-radius: 20px; cursor: pointer;">
+                    Download Resume PDF</button>
+            </a>
+        </section>
+
+
+        <section style="background-color: #6E122B; color: #F2F1ED; padding: 80px 0; display: flex; justify-content: center; font-family: 'Poppins', sans-serif;">
+            <div style="width: 90%; background-color: #4F0A1D; border-radius: 40px;  display: flex; justify-content: space-between; padding: 60px 80px; gap: 50px;">
+
+ 
+                <div style="flex: 1; padding-right: 40px; border-right: 2px solid #f8f1e8;">
+                    <p style="font-weight: bold; font-size: 22px; color: #deb7b0;">Education</p>
+                    <p style="line-height: 1.6;">
+                        Springfield Secondary School (2019 - 2023)<br>
+                        Republic Polytechnic (2023 - 2027 (Expected))
+                    </p>
+
+                    <br>
+
+                    <p style="font-weight: bold; font-size: 22px; color: #deb7b0;">Skill-Set</p>
+                    <p>Leadership and Team Collaboration<br>
+                        Adaptability in Agile Environments<br>
+                        Clear Communication (Design and Technical)<br>
+                        Iterative design and development<br>
+                        Task and Time Management<br>
+                        Problem Solving and Debugging<br>
+                    </p>
+
+                    <br>
+                    <p style="font-weight: bold; font-size: 22px; color: #deb7b0;">Technical Skills</p>
+                    <p><span style="font-weight: bold;">Design: </span>Figma, Adobe XD, Illustrator, Photoshop<br>
+                       <span style="font-weight: bold;">Frontend: </span>HTML, CSS, JavaScript, React<br>
+                       <span style="font-weight: bold;">Backend: </span>Node.js, Express, MySQL<br>
+                       <span style="font-weight: bold;">Others: </span>Git/GitHub, REST APIs, Basic SQL<br>
+                    </p>
+                    <br>
+
+                    <p style="font-weight: bold; font-size: 22px; color: #deb7b0;">Interest</p>
+                    <p>Digital Design and Web Design<br>
+                        Creative Technology<br>
+                        Handcrafted Art<br>
+                    </p>
+                </div>
+
+
+                <div style="flex: 1; padding-left: 40px;">
+
+                    <p style="font-weight: bold; font-size: 22px; color: #deb7b0;">Certificates</p>
+                    <p style="line-height: 1.6;">
+                        HackerRank React (Basic) – 2026<br>
+                        HackerRank JavaScript (Basic) – 2026<br>
+                        HackerRank SQL (Basic) – 2026<br>
+                        Edusave Scholarship Bursary – 2020–2022<br>
+                    </p>
+
+                <br>
+
+                    <p style="font-weight: bold; font-size: 22px; color: #deb7b0;">Experience</p>
+                    <h6 style="line-height: 1.6;">
+                        <span style="font-weight: bold; font-size: 20px;">Barista</span> <span style="margin-left: 300px;">2024 - Present</span><br></br>
+                        <p>• Utilized espresso machines and brewing equipment to craft high-quality beverages quickly and efficiently, achieving an average drink preparation time of under 3 minutes during peak hours
+                            <br>• Resolved customer complaints and feedback promptly and professionally, fostering a positive atmosphere and ensuring repeat business
+                        </p>
+                    </h6>
+                    <br>
+
+                    <h6 style="line-height: 1.6;">
+                        <span style="font-weight: bold; font-size: 20px;">Retail Assistant</span> <span style="margin-left: 200px;"> Nov 2022 - Dec 2022 </span><br><br>
+
+                        <p>• Experiences in cashiering, customer service and stocking<br>
+                            • Provided exceptional customer service by actively engaging with customers, addressing inquiries, and resolving issues promptly, leading to enhanced customer satisfaction and repeat business
+                        </p>
+                    </h6>
+                        
+                        
+                </div>
+
+            </div>
+        </section>
+
+        <section style="background-color: #6E122B; color: #F2F1ED; padding: 50px 20px; display: flex; justify-content: center; font-family: 'Poppins', sans-serif;">
+            <p style="font-size: 20px; text-align: center;">Open to internship opportunities — feel free to reach out via my <a href="contact.html" style="text-decoration: underline; color: #F2F1ED;">contact page</a> or connect with me on <a href="https://www.linkedin.com/in/irfah-sorfina" style="text-decoration: underline; color: #F2F1ED;">LinkedIn</a>.</p>
+        </section>
+
+        <footer style="background-color: #1D060A; color: white; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+            
+            <div style="max-width: 1200px; margin: auto;">
+                <div style="display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 40px;
+                margin-bottom: 50px;">
+                
+                <div style="margin-top: 40px; margin-left: 50px;">
+    
+                    <div style="display: flex; gap: 20px;">
+                        <a href="https://www.pinterest.com/irfahsorfina/"><img src="photos/PINTEREST_ICON.png" alt="Pinterest" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.instagram.com/cozyknots.hm/"><img src="photos/IG_ICON.png" alt="Instagram" style="width: 65px; height: auto;"></a>
+                        <a href="https://www.linkedin.com/in/irfah-sorfina"><img src="photos/LinkedIn logo.png" alt="LinkedIn" style="width: 65px; height: auto;"></a>
+                    </div>
+                </div>
+    
+                <div style="margin-top: 55px; display: flex; gap: 60px;">
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                  
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 40px;">
+                    <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
+                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1; color: #F2F1ED;">
+                        <h2>I`Syntax</h2>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
+
+
+        
+
+            
+        
