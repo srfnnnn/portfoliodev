@@ -4,6 +4,7 @@
       <title>Task Manager page</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
 
     </head>
 
@@ -43,7 +44,7 @@
         }
         </style>
 
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; font-family: 'Merriweather', Georgia, serif; color: #F2F1ED;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#4F0A1D; color: #F2F1ED;">
             <div class="container-fluid">
 
                 <!-- Logo -->
@@ -61,7 +62,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About me</a>
+                            <a class="nav-link fs-4" href="aboutme.html" style="color: #F2F1ED;">About Me</a>
                         </li>
 
                         <li class="nav-item dropdown d-flex align-items-center">
@@ -99,12 +100,12 @@
            </script>
         </nav>
 
-        <section style="display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: #e9d9c1; padding: 30px 0;">
+        <section style="display: flex; justify-content: center; flex-direction: column; align-items: center; background-color: #e9d9c1; padding: 30px 0; font-family: 'Merriweather', Georgia, serif;">
             <figure style="margin-top: 70px;">
-                <blockquote class="blockquote" style="text-align: center; font-weight: bold; font-family:'Times New Roman', Times, serif; font-size: 50px; color:#470d17;">
+                <blockquote class="blockquote" style="text-align: center; font-weight: bold; font-size: 55px; color:#470d17;">
                     <p>Task Manager Application</p>
                 </blockquote>
-                <figcaption class="blockquote-footer" style="text-align: center; font-weight: bold; font-family:'Times New Roman', Times, serif; color: #470d17;">
+                <figcaption class="blockquote-footer" style="text-align: center; font-size: 25px; color: #470d17;">
                     Web Development App
                 </figcaption>
             </figure>
@@ -114,20 +115,18 @@
         <!--logo concept section-->
         <section style="height: auto; background-color: #6E122B; color: #f8f1e8; display: flex; align-items: center; padding: 50px; flex-direction: column; font-family: 'Poppins', sans-serif; ">
             <div style=" padding: 50px 60px; color: #f8f1e8;">
-                <h2 style="font-weight: bold;">Overview</h2>
-                <p>
-                    Task list manager helps users organise and manage their daily activities efficiently. Users can add, edit, delete and track tasks, as well as view their overall completion status.
-                    Tasks can be categorised under predefined categories such as grocery shopping, errands, schoolwork and household chores, making it easier to organise and identify responsibilities.
-                </p>
+                <h1 style="font-weight: bold;">Overview</h1>
+                <p style="font-size: 18px;">
+                    The task list manager helps users organise and manage their daily activities efficiently. Users can add, edit, delete and track tasks, as well as view their overall completion status.
+                    Users can add new tasks, assign categories, update task details, mark tasks as completed, or delete tasks when they are no longer needed                </p>
                 <br>
                 
-                <p>
-                    Users can add new tasks, assign them to specific categories, update task details, mark tasks as completed or delete tasks when they are no longer needed.
+                <p style="font-size: 18px;">
                     An overall status feature provides a quick summary of task progress, helping users stay motivated and on track.
                     <br>
                     When adding a task, users enter a description and select a category. Tasks can be edited to update the description, change the category, or mark them as completed using a toggle switch.
-                    A confirmation pop-up is shown before deleting tasks to prevent accidental removal. Input validation using the .trim() method prevents empty tasks from being added and each task is assigned a 
-                    unique ID to ensure accurate editing and deletion.
+                    A confirmation pop-up is shown before deleting tasks to prevent accidental removal. Input validation using the .trim() method prevents empty tasks from being added, and each task is assigned a unique ID
+                     to ensure accurate editing and deletion.
                 </p>
             </div>
             <br>
@@ -147,7 +146,7 @@
                     <h1 style="margin: 0px; color: #f8f1e8; font-weight: bold;">Task Categorisation</h1>
                     <br>
             
-                    <div style=" max-width: 500px; color: #f8f1e8;">
+                    <div style=" max-width: 500px; color: #f8f1e8; font-size: 17px;">
                         <ul>
                             <li>Tasks can be grouped under different categories</li>
                             <li>Helps users organise tasks clearly and avoid clutter</li>
@@ -166,7 +165,7 @@
                     <h1 style="margin: 0px; color: #f8f1e8; font-weight: bold;">Add Tasks</h1>
                     <br>
             
-                    <div style="max-width: 500px; color: #f8f1e8;">
+                    <div style="max-width: 500px; color: #f8f1e8; font-size: 17px;">
                         <ul>
                             <li>Users can create new tasks and assign them to a selected category</li>
                             <li>Makes task planning simple and structured</li>
@@ -194,11 +193,11 @@
                     <h1 style="margin: 0px; color: #f8f1e8; font-weight: bold;">Edit Tasks</h1>
                     <br>
             
-                    <div style=" max-width: 500px; color: #f8f1e8; ">
+                    <div style=" max-width: 500px; color: #f8f1e8; font-size: 17px; ">
                         <ul>
                             <li>Existing tasks can be edited at any time</li>
                             <li>Users can update task names, categories and completion status</li>
-                            <li>Each task can be marked as Completed or Not Completed</li>
+                            <li>Each task can be marked as completed or incomplete</li>
                             <li>Allows users to easily track progress at a glance</li>
                         </ul>
                     </div>
@@ -214,7 +213,7 @@
                     <h1 style="margin: 0px; color: #f8f1e8; font-weight: bold;">Delete Tasks</h1>
                     <br>
             
-                    <div style="max-width: 500px; color: #f8f1e8;">
+                    <div style="max-width: 500px; color: #f8f1e8; font-size: 17px;">
                         <ul>
                             <li>Tasks can be removed when they are no longer needed</li>
                             <li>Keeps the task list clean and relevant</li>
@@ -242,10 +241,10 @@
                     <h1 style="margin: 0px; color: #f8f1e8; font-weight: bold;">Overall Status Tracking</h1>
                     <br>
             
-                    <div style="max-width: 500px; color: #f8f1e8;">
+                    <div style="max-width: 500px; color: #f8f1e8; font-size: 17px;">
                         <ul>
                             <li>Displays the total number of completed and incomplete tasks</li>
-                            <li>Shows the percentage of completed tasks to give users a clear overview of their productivity</li>
+                            <li>Shows the percentage of completed tasks, giving users a clear overview of their productivity</li>
                         </ul>
                     </div>
                     <br>
@@ -255,8 +254,8 @@
 
             <div style=" padding: 50px 60px; color: #f8f1e8;">
                 <h1 style="font-weight: bold;">Purpose</h1>
-                <p>
-                    The app is designed to help users to stay organised, manage time more effectively, reduce confusion from unstructured task lists and visually track progress and completion
+                <p style="font-size: 18px;">
+                    TThe app is designed to help users stay organised, manage time more effectively, reduce confusion from unstructured task lists and visually track progress and completion
                 </p>
             </div>
             <br>
@@ -275,7 +274,7 @@
 
 
 
-        <footer style="background-color: #1D060A; color: F2F1ED; padding: 10px 0; position: relative; font-family: 'Poppins', sans-serif;">
+        <footer style="background-color: #1D060A; color: #F2F1ED; padding: 10px 0; position: relative; font-family: 'Merriweather', Georgia, serif;">
             
             <div style="max-width: 1200px; margin: auto;">
                 <div style="display: flex;
@@ -294,16 +293,16 @@
                 </div>
     
                 <div style="margin-top: 55px; display: flex; gap: 60px;">
-                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">About me</a>
+                    <a href="aboutme.html" style="text-decoration: none; color: #F2F1ED; font-size: 24px;">About Me</a>
                     
-                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Contact</a>
+                    <a href="contact.html" style="text-decoration: none; color: #F2F1ED; font-size: 24px;">Contact</a>
                   
-                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 20px;">Career goals</a>
+                    <a href="careerGoals.html" style="text-decoration: none; color: #F2F1ED; font-size: 24px;">Career Goals</a>
                 </div>
                 
                 <div style="display: flex; align-items: center; margin-top: 40px;">
                     <img src="photos/logo.png" alt="Logo" style="height: 60px; width: 60px;">
-                    <div style="font-family: 'Times New Roman', serif; font-weight: bold; font-size: 3em; line-height: 1.1; color: #F2F1ED;">
+                    <div style="font-weight: bold; font-size: 3em; line-height: 1.1; color: #F2F1ED;">
                         <h2>I`Syntax</h2>
                     </div>
                 </div>
